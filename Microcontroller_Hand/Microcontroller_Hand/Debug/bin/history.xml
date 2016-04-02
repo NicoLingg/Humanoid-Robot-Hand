@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.8.4 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Microcontroller_Hand.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Microcontroller_Hand -TC:\CooCox\CoIDE\configuration\ProgramData\Microcontroller_Hand/arm-gcc-link.ld -g">
+      <target file="Microcontroller_Hand.elf" lastModified="1533cede7b1">
+         <source file="..\obj\lpc17xx_clkpwr.o" lastModified="1533ceddfa0"/>
+         <source file="..\obj\system_LPC17xx.o" lastModified="1533cede016"/>
+         <source file="..\obj\lpc17xx_uart.o" lastModified="1533cede0ca"/>
+         <source file="..\obj\main.o" lastModified="1533cede165"/>
+         <source file="..\obj\printf.o" lastModified="1533cede1f3"/>
+         <source file="..\obj\lpc17xx_gpio.o" lastModified="1533cede281"/>
+         <source file="..\obj\startup_LPC17xx.o" lastModified="1533cede2eb"/>
+         <source file="..\obj\lpc17xx_libcfg_default.o" lastModified="1533cede353"/>
+         <source file="..\obj\lpc17xx_pinsel.o" lastModified="1533cede3c9"/>
+         <source file="..\obj\syscalls.o" lastModified="1533cede43f"/>
+         <source file="..\obj\lpc17xx_pwm.o" lastModified="1533cede4c9"/>
+         <source file="..\obj\lc798x.o" lastModified="1533cede569"/>
+      </target>
+   </processor>
+</history>

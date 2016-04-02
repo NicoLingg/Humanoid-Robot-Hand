@@ -1,0 +1,14 @@
+<map id="lcd_newline" name="lcd_newline">
+<area shape="rect" id="node2" href="$lc798x_8h.html#a5330b79372b260630a9049c60b1fefa3" title="lcd_putchar" alt="" coords="143,56,232,83"/>
+<area shape="rect" id="node3" href="$printf_8c.html#aac7233dce0ef357b1ea507667a7b6e07" title="Transmit a char, if you want to use printf(), you need implement this function. " alt="" coords="280,56,356,83"/>
+<area shape="rect" id="node4" href="$printf_8c.html#a25c4b74226a8a3a0d6eef3a072be087b" title="Implementation of fputc using the DBGU as the standard output. Required for printf(). " alt="" coords="404,56,455,83"/>
+<area shape="rect" id="node5" href="$printf_8c.html#ad870e26ae50d712bb504aa4b067802f4" title="Implementation of fputs using the DBGU as the standard output. Required for printf(). " alt="" coords="503,56,553,83"/>
+<area shape="rect" id="node6" href="$printf_8c.html#a4c938d1cedba90cbc8107400ebea6100" title="Outputs a formatted string on the given stream. Format arguments are given in a va_list instance..." alt="" coords="601,31,660,57"/>
+<area shape="rect" id="node13" href="$printf_8c.html#a5a8c5f197e584138be351a4437f67689" title="Outputs a string on stdout. " alt="" coords="607,81,654,108"/>
+<area shape="rect" id="node7" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="708,5,763,32"/>
+<area shape="rect" id="node12" href="$printf_8c.html#a714a7aeb0b480bc7cc85c1685964861f" title="Outputs a formatted string on the given stream, using a variable number of arguments. " alt="" coords="709,56,762,83"/>
+<area shape="rect" id="node8" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="811,5,861,32"/>
+<area shape="rect" id="node9" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="16 Bit Variable Ausgabe : " alt="" coords="909,5,1023,32"/>
+<area shape="rect" id="node10" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main&#45;Programm: " alt="" coords="1071,5,1121,32"/>
+<area shape="rect" id="node11" href="$startup___l_p_c17xx_8c.html#a0b25f0c80528ba782dfb09214c5b1737" title="This is the code that gets called when the processor first starts execution following a reset event..." alt="" coords="1169,5,1324,32"/>
+</map>

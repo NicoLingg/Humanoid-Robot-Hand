@@ -1,0 +1,5 @@
+<map id="lcd_set_system" name="lcd_set_system">
+<area shape="rect" id="node2" href="$lc798x_8c.html#a08d0b7df8efda0c3b5af2955cccae65f" title="lc798x_register" alt="" coords="168,5,279,32"/>
+<area shape="rect" id="node3" href="$lc798x_8c.html#aadaccfff3a85ee0924556a54fa9d3014" title="lcd_write" alt="" coords="327,5,400,32"/>
+<area shape="rect" id="node4" href="$lc798x_8c.html#a6df91edebc1cc2015e9d66bf34b20d92" title="lc798x_wait_for_ready" alt="" coords="448,5,599,32"/>
+</map>

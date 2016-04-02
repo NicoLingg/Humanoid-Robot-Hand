@@ -1,0 +1,26 @@
+var main_8c =
+[
+    [ "ADC_HardWareInit", "main_8c.html#a55d8015ece045b7dc151239bc45e3334", null ],
+    [ "adcValue_BurstRead", "main_8c.html#a29d1451567c991dda1a4f08b645d0c08", null ],
+    [ "Init_System", "main_8c.html#abee0b2208e1314912cb1a9433720d704", null ],
+    [ "LCD_Init", "main_8c.html#aa53c9d40f3aa552a9974cd55ac510cb3", null ],
+    [ "main", "main_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],
+    [ "Timer0_DelayMs", "main_8c.html#a3dccc2054070aae79797f9363482420e", null ],
+    [ "UART_Inital", "main_8c.html#a214f9bddb23c4dfb666c9c206d9ba8dd", null ],
+    [ "UARTPutChar", "main_8c.html#a13b4280dc71a2da766996eaa5bfc16fa", null ],
+    [ "UARTPutDec16", "main_8c.html#a2b1ec0f642c0671a7370da10bb4740da", null ],
+    [ "adc_channelArray", "main_8c.html#affe94140c5ec1955b864584f989f6f10", null ],
+    [ "adcValueArray", "main_8c.html#ab569a7cdf585cb5b052b869008ce178e", null ],
+    [ "Delta_SensorMotor", "main_8c.html#a986b152bc66d2bff5ad3003dc0f14097", null ],
+    [ "MotorArrayMax", "main_8c.html#a30d91253a0deb5e7eee91caf78ed5333", null ],
+    [ "MotorArrayMin", "main_8c.html#a0216327d97d35d339e00bd923528da5b", null ],
+    [ "Position_Trashhold", "main_8c.html#a64b0c33c1bbad52a2b8df1bedd8c1ac0", null ],
+    [ "PositionArray", "main_8c.html#a6387a671be686e74d87fcbc0e6f14e6e", null ],
+    [ "PositionArray_Temp", "main_8c.html#a51d5118807ff20bdda138795bd3e3f14", null ],
+    [ "PositionHighLimit", "main_8c.html#a648633d1846beaabc6f2ecd23ab47b81", null ],
+    [ "PositionLowLimit", "main_8c.html#a4e48626ce01ba13856a3b483e517048d", null ],
+    [ "SensorArrayMax", "main_8c.html#a576d07dd6170790596ce7a57763bef12", null ],
+    [ "SensorArrayMin", "main_8c.html#a270a642adfed7da7e5136cb349ffc3e2", null ],
+    [ "txBuf", "main_8c.html#a074ef1798de46e2f5f14654ff6d75c74", null ],
+    [ "var", "main_8c.html#a18e2aba0699f4b02969f85ac218b2a14", null ]
+];

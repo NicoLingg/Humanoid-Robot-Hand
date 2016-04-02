@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Motor-Bluetooth: Ansteuerung_Motor_Bluetooth/lpc17xx_lib/include/lpc17xx_gpio.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Motor-Bluetooth
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Nico Lingg</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="annotated.html"><span>Datenstrukturen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lpc17xx__gpio_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lpc17xx_gpio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lpc17xx__gpio_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***********************************************************************/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* Peripheral group ----------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef LPC17XX_GPIO_H_</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define LPC17XX_GPIO_H_</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* Includes ------------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_l_p_c17xx_8h.html">LPC17xx.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lpc__types_8h.html">lpc_types.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* Public Macros -------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga283f46328b525142110cfd3d8a905b4b">   46</a></span>&#160;<span class="preprocessor">#define GPIO0_Byte  ((GPIO_Byte_TypeDef *)(LPC_GPIO0_BASE))</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga06af9dfab07e8c2a5f1a6db198896e84">   48</a></span>&#160;<span class="preprocessor">#define GPIO1_Byte  ((GPIO_Byte_TypeDef *)(LPC_GPIO1_BASE))</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga047ebf1e19ebfdd3abf05ba23491fa05">   50</a></span>&#160;<span class="preprocessor">#define GPIO2_Byte  ((GPIO_Byte_TypeDef *)(LPC_GPIO2_BASE))</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga51a2f5fc99e06509aabe77fef292503b">   52</a></span>&#160;<span class="preprocessor">#define GPIO3_Byte  ((GPIO_Byte_TypeDef *)(LPC_GPIO3_BASE))</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga528428e2906cb32a40f0e62a559f3814">   54</a></span>&#160;<span class="preprocessor">#define GPIO4_Byte  ((GPIO_Byte_TypeDef *)(LPC_GPIO4_BASE))</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga1ff064a592c57da00124bb63736c4125">   58</a></span>&#160;<span class="preprocessor">#define GPIO0_HalfWord  ((GPIO_HalfWord_TypeDef *)(LPC_GPIO0_BASE))</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#gaa0c96e5acb3905bd46033e49b0c0c2c2">   60</a></span>&#160;<span class="preprocessor">#define GPIO1_HalfWord  ((GPIO_HalfWord_TypeDef *)(LPC_GPIO1_BASE))</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga2bf1837541e93e32013115a2d60c9609">   62</a></span>&#160;<span class="preprocessor">#define GPIO2_HalfWord  ((GPIO_HalfWord_TypeDef *)(LPC_GPIO2_BASE))</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#gadb3ef5b918d80a4b0b70a0f0ff74fe5e">   64</a></span>&#160;<span class="preprocessor">#define GPIO3_HalfWord  ((GPIO_HalfWord_TypeDef *)(LPC_GPIO3_BASE))</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___g_p_i_o___public___macros.html#ga6b21ef2ef759ab3165ef5031014266b0">   66</a></span>&#160;<span class="preprocessor">#define GPIO4_HalfWord  ((GPIO_HalfWord_TypeDef *)(LPC_GPIO4_BASE))</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/* Public Types --------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html">   80</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html#a2b3b82f7a74bf01ded71044808bdd1fd">   81</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint8_t FIODIR[4];     </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html#a8d5872ef46261e096eae509eec8bc5c3">   82</a></span>&#160;       uint32_t RESERVED0[3];   </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html#af1d9e0deb413813919988a5d2b971d88">   83</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint8_t FIOMASK[4];    </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html#a1f597c34725bc8383df6d198a24f1567">   84</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint8_t FIOPIN[4];     </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html#ac03b98c9da8273393c54cf192cf05ccb">   85</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint8_t FIOSET[4];     </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___byte___type_def.html#a51fc7b0f7503c0b604b839d60875e9a1">   86</a></span>&#160;    <a class="code" href="core__cm3_8h.html#a7e25d9380f9ef903923964322e71f2f6">__O</a>  uint8_t FIOCLR[4];     </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <a class="code" href="struct_g_p_i_o___byte___type_def.html">GPIO_Byte_TypeDef</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html">   93</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a226984c401d32181df98671dd7625689">   94</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a226984c401d32181df98671dd7625689">FIODIRL</a>;      </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#ac23693ac813c65d155b45f894b5254dc">   95</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#ac23693ac813c65d155b45f894b5254dc">FIODIRU</a>;      </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a8d5872ef46261e096eae509eec8bc5c3">   96</a></span>&#160;       uint32_t RESERVED0[3];   </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a6899ec6685b35582132b36295620cd54">   97</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a6899ec6685b35582132b36295620cd54">FIOMASKL</a>;     </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a5f008a58f3d4e48bfc446e5388aeabb1">   98</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a5f008a58f3d4e48bfc446e5388aeabb1">FIOMASKU</a>;     </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#ac30b648187bb59619e97595f5fc7a277">   99</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#ac30b648187bb59619e97595f5fc7a277">FIOPINL</a>;      </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a0d60c544b67a9b87fa871662023948da">  100</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a0d60c544b67a9b87fa871662023948da">FIOPINU</a>;      </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a17a7ea60382903291087b1c921485818">  101</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a17a7ea60382903291087b1c921485818">FIOSETL</a>;      </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a98fcf01488a1195037e2388ddab42955">  102</a></span>&#160;    <a class="code" href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a> uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a98fcf01488a1195037e2388ddab42955">FIOSETU</a>;      </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a6e60e990aaf3ae084df7bf7d77e50bcd">  103</a></span>&#160;    <a class="code" href="core__cm3_8h.html#a7e25d9380f9ef903923964322e71f2f6">__O</a>  uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a6e60e990aaf3ae084df7bf7d77e50bcd">FIOCLRL</a>;      </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="struct_g_p_i_o___half_word___type_def.html#a39e813db7c4a8d70e0f014e52e7e0803">  104</a></span>&#160;    <a class="code" href="core__cm3_8h.html#a7e25d9380f9ef903923964322e71f2f6">__O</a>  uint16_t <a class="code" href="struct_g_p_i_o___half_word___type_def.html#a39e813db7c4a8d70e0f014e52e7e0803">FIOCLRU</a>;      </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <a class="code" href="struct_g_p_i_o___half_word___type_def.html">GPIO_HalfWord_TypeDef</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">/* Public Functions ----------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/* GPIO style ------------------------------- */</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga8c31c99596c6c47e513186788882b47c">GPIO_SetDir</a>(uint8_t portNum, uint32_t bitValue, uint8_t dir);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#gacdcb07acb7ca418274baee8cbd4f810c">GPIO_SetValue</a>(uint8_t portNum, uint32_t bitValue);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#gaa2abb4e13b93d567c22917eb1fda5589">GPIO_ClearValue</a>(uint8_t portNum, uint32_t bitValue);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;uint32_t <a class="code" href="group___g_p_i_o___public___functions.html#gac3d5c73668775dd7f5320c6cdf6b9e0c">GPIO_ReadValue</a>(uint8_t portNum);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga88ea99cb18ddfa3eb641b8f2fa8d63ad">GPIO_IntCmd</a>(uint8_t portNum, uint32_t bitValue, uint8_t edgeState);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> <a class="code" href="group___g_p_i_o___public___functions.html#ga9904b2e813fe5499964ba18e2f3323c8">GPIO_GetIntStatus</a>(uint8_t portNum, uint32_t pinNum, uint8_t edgeState);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#gaf35289dfd8048cc2859858e18780e66a">GPIO_ClearInt</a>(uint8_t portNum, uint32_t bitValue);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">/* FIO (word-accessible) style ------------------------------- */</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga8084f8294aeb3b58a6c9c2764108f653">FIO_SetDir</a>(uint8_t portNum, uint32_t bitValue, uint8_t dir);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#gaf913440461933b1d07d3f0d764eb192a">FIO_SetValue</a>(uint8_t portNum, uint32_t bitValue);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga5d2ece7e02e06da0ee5655aa7eb023f1">FIO_ClearValue</a>(uint8_t portNum, uint32_t bitValue);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;uint32_t <a class="code" href="group___g_p_i_o___public___functions.html#gae6292e92ddda24afbd600f2a843c9586">FIO_ReadValue</a>(uint8_t portNum);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga52db811bd6b4502cbd6e16cce2f28813">FIO_SetMask</a>(uint8_t portNum, uint32_t bitValue, uint8_t maskValue);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga44e6390ad256eed34193a9ac7934ade7">FIO_IntCmd</a>(uint8_t portNum, uint32_t bitValue, uint8_t edgeState);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> <a class="code" href="group___g_p_i_o___public___functions.html#ga4b2bf89f04d8e679551714ff49502074">FIO_GetIntStatus</a>(uint8_t portNum, uint32_t pinNum, uint8_t edgeState);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga5584613ec475b880574e80123648f9bc">FIO_ClearInt</a>(uint8_t portNum, uint32_t pinNum);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">/* FIO (halfword-accessible) style ------------------------------- */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga378164d8108e4334291764ea907f50b1">FIO_HalfWordSetDir</a>(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue, uint8_t dir);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga41fa62b0810082ee4336efc6b231c62f">FIO_HalfWordSetMask</a>(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue, uint8_t maskValue);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga794b7ebf78d568cf05b8e1c63793825b">FIO_HalfWordSetValue</a>(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#gab3900479f0525184ef060963b664ebb7">FIO_HalfWordClearValue</a>(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;uint16_t <a class="code" href="group___g_p_i_o___public___functions.html#ga0cd6aa5707c8da6fdb706adaf81d60f5">FIO_HalfWordReadValue</a>(uint8_t portNum, uint8_t halfwordNum);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">/* FIO (byte-accessible) style ------------------------------- */</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga58a215a79ef3d0786d093725c2c68ff6">FIO_ByteSetDir</a>(uint8_t portNum, uint8_t byteNum, uint8_t bitValue, uint8_t dir);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga7d462b16053264f9a85f9f036dc8de77">FIO_ByteSetMask</a>(uint8_t portNum, uint8_t byteNum, uint8_t bitValue, uint8_t maskValue);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#ga4dbb71990764ae3709f8db3a3baba220">FIO_ByteSetValue</a>(uint8_t portNum, uint8_t byteNum, uint8_t bitValue);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_p_i_o___public___functions.html#gaa1a9c3d36155d91bf6d9b87aa8248273">FIO_ByteClearValue</a>(uint8_t portNum, uint8_t byteNum, uint8_t bitValue);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;uint8_t <a class="code" href="group___g_p_i_o___public___functions.html#ga76ef00d302b3639ae779a8dc6f4501b9">FIO_ByteReadValue</a>(uint8_t portNum, uint8_t byteNum);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LPC17XX_GPIO_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">/* --------------------------------- End Of File ------------------------------ */</span></div>
+<div class="ttc" id="core__cm3_8h_html_a7e25d9380f9ef903923964322e71f2f6"><div class="ttname"><a href="core__cm3_8h.html#a7e25d9380f9ef903923964322e71f2f6">__O</a></div><div class="ttdeci">#define __O</div><div class="ttdef"><b>Definition:</b> core_cm3.h:167</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gaa2abb4e13b93d567c22917eb1fda5589"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gaa2abb4e13b93d567c22917eb1fda5589">GPIO_ClearValue</a></div><div class="ttdeci">void GPIO_ClearValue(uint8_t portNum, uint32_t bitValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga44e6390ad256eed34193a9ac7934ade7"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga44e6390ad256eed34193a9ac7934ade7">FIO_IntCmd</a></div><div class="ttdeci">void FIO_IntCmd(uint8_t portNum, uint32_t bitValue, uint8_t edgeState)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_ac23693ac813c65d155b45f894b5254dc"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#ac23693ac813c65d155b45f894b5254dc">GPIO_HalfWord_TypeDef::FIODIRU</a></div><div class="ttdeci">__IO uint16_t FIODIRU</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:95</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gaa1a9c3d36155d91bf6d9b87aa8248273"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gaa1a9c3d36155d91bf6d9b87aa8248273">FIO_ByteClearValue</a></div><div class="ttdeci">void FIO_ByteClearValue(uint8_t portNum, uint8_t byteNum, uint8_t bitValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga5d2ece7e02e06da0ee5655aa7eb023f1"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga5d2ece7e02e06da0ee5655aa7eb023f1">FIO_ClearValue</a></div><div class="ttdeci">void FIO_ClearValue(uint8_t portNum, uint32_t bitValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga8084f8294aeb3b58a6c9c2764108f653"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga8084f8294aeb3b58a6c9c2764108f653">FIO_SetDir</a></div><div class="ttdeci">void FIO_SetDir(uint8_t portNum, uint32_t bitValue, uint8_t dir)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a226984c401d32181df98671dd7625689"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a226984c401d32181df98671dd7625689">GPIO_HalfWord_TypeDef::FIODIRL</a></div><div class="ttdeci">__IO uint16_t FIODIRL</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:94</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga41fa62b0810082ee4336efc6b231c62f"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga41fa62b0810082ee4336efc6b231c62f">FIO_HalfWordSetMask</a></div><div class="ttdeci">void FIO_HalfWordSetMask(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue, uint8_t maskValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga8c31c99596c6c47e513186788882b47c"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga8c31c99596c6c47e513186788882b47c">GPIO_SetDir</a></div><div class="ttdeci">void GPIO_SetDir(uint8_t portNum, uint32_t bitValue, uint8_t dir)</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdoc">Functional State Definition. </div><div class="ttdef"><b>Definition:</b> lpc_types.h:55</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gac3d5c73668775dd7f5320c6cdf6b9e0c"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gac3d5c73668775dd7f5320c6cdf6b9e0c">GPIO_ReadValue</a></div><div class="ttdeci">uint32_t GPIO_ReadValue(uint8_t portNum)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga76ef00d302b3639ae779a8dc6f4501b9"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga76ef00d302b3639ae779a8dc6f4501b9">FIO_ByteReadValue</a></div><div class="ttdeci">uint8_t FIO_ByteReadValue(uint8_t portNum, uint8_t byteNum)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gacdcb07acb7ca418274baee8cbd4f810c"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gacdcb07acb7ca418274baee8cbd4f810c">GPIO_SetValue</a></div><div class="ttdeci">void GPIO_SetValue(uint8_t portNum, uint32_t bitValue)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_ac30b648187bb59619e97595f5fc7a277"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#ac30b648187bb59619e97595f5fc7a277">GPIO_HalfWord_TypeDef::FIOPINL</a></div><div class="ttdeci">__IO uint16_t FIOPINL</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:99</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a98fcf01488a1195037e2388ddab42955"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a98fcf01488a1195037e2388ddab42955">GPIO_HalfWord_TypeDef::FIOSETU</a></div><div class="ttdeci">__IO uint16_t FIOSETU</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:102</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gaf35289dfd8048cc2859858e18780e66a"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gaf35289dfd8048cc2859858e18780e66a">GPIO_ClearInt</a></div><div class="ttdeci">void GPIO_ClearInt(uint8_t portNum, uint32_t bitValue)</div></div>
+<div class="ttc" id="lpc__types_8h_html"><div class="ttname"><a href="lpc__types_8h.html">lpc_types.h</a></div><div class="ttdoc">Contains the NXP ABL typedefs for C standard types. It is intended to be used in ISO C conforming dev...</div></div>
+<div class="ttc" id="struct_g_p_i_o___byte___type_def_html"><div class="ttname"><a href="struct_g_p_i_o___byte___type_def.html">GPIO_Byte_TypeDef</a></div><div class="ttdoc">Fast GPIO port byte type definition. </div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:80</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga7d462b16053264f9a85f9f036dc8de77"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga7d462b16053264f9a85f9f036dc8de77">FIO_ByteSetMask</a></div><div class="ttdeci">void FIO_ByteSetMask(uint8_t portNum, uint8_t byteNum, uint8_t bitValue, uint8_t maskValue)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a6899ec6685b35582132b36295620cd54"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a6899ec6685b35582132b36295620cd54">GPIO_HalfWord_TypeDef::FIOMASKL</a></div><div class="ttdeci">__IO uint16_t FIOMASKL</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:97</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a5f008a58f3d4e48bfc446e5388aeabb1"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a5f008a58f3d4e48bfc446e5388aeabb1">GPIO_HalfWord_TypeDef::FIOMASKU</a></div><div class="ttdeci">__IO uint16_t FIOMASKU</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:98</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gae6292e92ddda24afbd600f2a843c9586"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gae6292e92ddda24afbd600f2a843c9586">FIO_ReadValue</a></div><div class="ttdeci">uint32_t FIO_ReadValue(uint8_t portNum)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a17a7ea60382903291087b1c921485818"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a17a7ea60382903291087b1c921485818">GPIO_HalfWord_TypeDef::FIOSETL</a></div><div class="ttdeci">__IO uint16_t FIOSETL</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:101</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a0d60c544b67a9b87fa871662023948da"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a0d60c544b67a9b87fa871662023948da">GPIO_HalfWord_TypeDef::FIOPINU</a></div><div class="ttdeci">__IO uint16_t FIOPINU</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:100</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga4b2bf89f04d8e679551714ff49502074"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga4b2bf89f04d8e679551714ff49502074">FIO_GetIntStatus</a></div><div class="ttdeci">FunctionalState FIO_GetIntStatus(uint8_t portNum, uint32_t pinNum, uint8_t edgeState)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga5584613ec475b880574e80123648f9bc"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga5584613ec475b880574e80123648f9bc">FIO_ClearInt</a></div><div class="ttdeci">void FIO_ClearInt(uint8_t portNum, uint32_t pinNum)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gab3900479f0525184ef060963b664ebb7"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gab3900479f0525184ef060963b664ebb7">FIO_HalfWordClearValue</a></div><div class="ttdeci">void FIO_HalfWordClearValue(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga88ea99cb18ddfa3eb641b8f2fa8d63ad"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga88ea99cb18ddfa3eb641b8f2fa8d63ad">GPIO_IntCmd</a></div><div class="ttdeci">void GPIO_IntCmd(uint8_t portNum, uint32_t bitValue, uint8_t edgeState)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga378164d8108e4334291764ea907f50b1"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga378164d8108e4334291764ea907f50b1">FIO_HalfWordSetDir</a></div><div class="ttdeci">void FIO_HalfWordSetDir(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue, uint8_t dir)</div></div>
+<div class="ttc" id="core__cm3_8h_html_aec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="core__cm3_8h.html#aec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> core_cm3.h:168</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga9904b2e813fe5499964ba18e2f3323c8"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga9904b2e813fe5499964ba18e2f3323c8">GPIO_GetIntStatus</a></div><div class="ttdeci">FunctionalState GPIO_GetIntStatus(uint8_t portNum, uint32_t pinNum, uint8_t edgeState)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga0cd6aa5707c8da6fdb706adaf81d60f5"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga0cd6aa5707c8da6fdb706adaf81d60f5">FIO_HalfWordReadValue</a></div><div class="ttdeci">uint16_t FIO_HalfWordReadValue(uint8_t portNum, uint8_t halfwordNum)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html">GPIO_HalfWord_TypeDef</a></div><div class="ttdoc">Fast GPIO port half-word type definition. </div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:93</div></div>
+<div class="ttc" id="_l_p_c17xx_8h_html"><div class="ttname"><a href="_l_p_c17xx_8h.html">LPC17xx.h</a></div><div class="ttdoc">CMSIS Cortex-M3 Core Peripheral Access Layer Header File for NXP LPC17xx Device Series. </div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga4dbb71990764ae3709f8db3a3baba220"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga4dbb71990764ae3709f8db3a3baba220">FIO_ByteSetValue</a></div><div class="ttdeci">void FIO_ByteSetValue(uint8_t portNum, uint8_t byteNum, uint8_t bitValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_gaf913440461933b1d07d3f0d764eb192a"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#gaf913440461933b1d07d3f0d764eb192a">FIO_SetValue</a></div><div class="ttdeci">void FIO_SetValue(uint8_t portNum, uint32_t bitValue)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a39e813db7c4a8d70e0f014e52e7e0803"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a39e813db7c4a8d70e0f014e52e7e0803">GPIO_HalfWord_TypeDef::FIOCLRU</a></div><div class="ttdeci">__O uint16_t FIOCLRU</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:104</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga52db811bd6b4502cbd6e16cce2f28813"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga52db811bd6b4502cbd6e16cce2f28813">FIO_SetMask</a></div><div class="ttdeci">void FIO_SetMask(uint8_t portNum, uint32_t bitValue, uint8_t maskValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga794b7ebf78d568cf05b8e1c63793825b"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga794b7ebf78d568cf05b8e1c63793825b">FIO_HalfWordSetValue</a></div><div class="ttdeci">void FIO_HalfWordSetValue(uint8_t portNum, uint8_t halfwordNum, uint16_t bitValue)</div></div>
+<div class="ttc" id="group___g_p_i_o___public___functions_html_ga58a215a79ef3d0786d093725c2c68ff6"><div class="ttname"><a href="group___g_p_i_o___public___functions.html#ga58a215a79ef3d0786d093725c2c68ff6">FIO_ByteSetDir</a></div><div class="ttdeci">void FIO_ByteSetDir(uint8_t portNum, uint8_t byteNum, uint8_t bitValue, uint8_t dir)</div></div>
+<div class="ttc" id="struct_g_p_i_o___half_word___type_def_html_a6e60e990aaf3ae084df7bf7d77e50bcd"><div class="ttname"><a href="struct_g_p_i_o___half_word___type_def.html#a6e60e990aaf3ae084df7bf7d77e50bcd">GPIO_HalfWord_TypeDef::FIOCLRL</a></div><div class="ttdeci">__O uint16_t FIOCLRL</div><div class="ttdef"><b>Definition:</b> lpc17xx_gpio.h:103</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_65e122f28d88b3dd374e173b97bbb508.html">Ansteuerung_Motor_Bluetooth</a></li><li class="navelem"><a class="el" href="dir_3612d0e9e0d7d216c57e364290420627.html">lpc17xx_lib</a></li><li class="navelem"><a class="el" href="dir_56fd4c18c3c23a9c1a75140d850933b4.html">include</a></li><li class="navelem"><a class="el" href="lpc17xx__gpio_8h.html">lpc17xx_gpio.h</a></li>
+    <li class="footer">Erzeugt am Sam Jun 27 2015 17:50:13 für Motor-Bluetooth von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

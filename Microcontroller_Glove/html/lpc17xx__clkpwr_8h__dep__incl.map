@@ -1,0 +1,5 @@
+<map id="Ansteuerung_ADC_Bluetooth/lpc17xx_lib/include/lpc17xx_clkpwr.h" name="Ansteuerung_ADC_Bluetooth/lpc17xx_lib/include/lpc17xx_clkpwr.h">
+<area shape="rect" id="node2" href="$lpc17xx__adc_8c.html" title="Contains all functions support for ADC firmware library on LPC17xx. " alt="" coords="5,117,228,158"/>
+<area shape="rect" id="node3" href="$lpc17xx__clkpwr_8c.html" title="Contains all functions support for Clock and Power Control firmware library on LPC17xx. " alt="" coords="252,109,443,165"/>
+<area shape="rect" id="node4" href="$lpc17xx__uart_8c.html" title="Contains all functions support for UART firmware library on LPC17xx. " alt="" coords="467,117,689,158"/>
+</map>

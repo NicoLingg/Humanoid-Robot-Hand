@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>ADC-Bluetooth: Ansteuerung_ADC_Bluetooth/lpc17xx_lib/include/lpc17xx_adc.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ADC-Bluetooth
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Nico Lingg</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="annotated.html"><span>Datenstrukturen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lpc17xx__adc_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lpc17xx_adc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lpc17xx__adc_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***********************************************************************/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* Peripheral group ----------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef LPC17XX_ADC_H_</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define LPC17XX_ADC_H_</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* Includes ------------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_l_p_c17xx_8h.html">LPC17xx.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lpc__types_8h.html">lpc_types.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* Private macros ------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/* -------------------------- BIT DEFINITIONS ----------------------------------- */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga3a6629b2190324c0b6abafc4b720df2e">   50</a></span>&#160;<span class="preprocessor">#define ADC_CR_CH_SEL(n)    ((1UL &lt;&lt; n))</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gad2327ec652bedf37c800e077cc46d904">   53</a></span>&#160;<span class="preprocessor">#define ADC_CR_CLKDIV(n)    ((n&lt;&lt;8))</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gac4274c705620f3ddd5ba7f73249e6248">   55</a></span>&#160;<span class="preprocessor">#define ADC_CR_BURST        ((1UL&lt;&lt;16))</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga7474e4ab5695434acbfe8a5fcad35ef0">   57</a></span>&#160;<span class="preprocessor">#define ADC_CR_PDN          ((1UL&lt;&lt;21))</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gadb696eab756362a8e2dbc5502f8bdeaf">   59</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_MASK   ((7UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga1af437f22df0b2b07bef704b23733874">   61</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_MODE_SEL(SEL)  ((SEL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gad9f225e8d5f50609888edab56cd0da5c">   63</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_NOW    ((1UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gac821b0162480d224ff928bf834bcb431">   65</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_EINT0  ((2UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga4e02749175edb9417c4a7961b2d4e4c9">   67</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_CAP01  ((3UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga4accee65c727e3ba2e188617109ad01e">   69</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_MAT01  ((4UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga61d62f698ffa3c9772e1bea985f47e62">   71</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_MAT03  ((5UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga1a95007f7fa04b41528857b1f8e065da">   73</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_MAT10  ((6UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gac4a508f05c04a51d3af94ab0f1686716">   75</a></span>&#160;<span class="preprocessor">#define ADC_CR_START_MAT11  ((7UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga1d05d43234dd2d1489841dff0012225e">   77</a></span>&#160;<span class="preprocessor">#define ADC_CR_EDGE         ((1UL&lt;&lt;27))</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga3f3911f930878b532604b661686fdca0">   83</a></span>&#160;<span class="preprocessor">#define ADC_GDR_RESULT(n)       (((n&gt;&gt;4)&amp;0xFFF))</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga64132bfe8cebfb3b482e8f1f4ff721d7">   85</a></span>&#160;<span class="preprocessor">#define ADC_GDR_CH(n)           (((n&gt;&gt;24)&amp;0x7))</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga58a2d5a6e2743223c42a06d3f842d2cc">   88</a></span>&#160;<span class="preprocessor">#define ADC_GDR_OVERRUN_FLAG    ((1UL&lt;&lt;30))</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga10e152dba4ccc21a6ea94a2481c51d92">   90</a></span>&#160;<span class="preprocessor">#define ADC_GDR_DONE_FLAG       ((1UL&lt;&lt;31))</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga928e3f99c9f1c2515a1d9d12a0e87336">   93</a></span>&#160;<span class="preprocessor">#define ADC_GDR_CH_MASK     ((7UL&lt;&lt;24))</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gad30f864c531ddc1e661dfcac7d37a900">   99</a></span>&#160;<span class="preprocessor">#define ADC_INTEN_CH(n)         ((1UL&lt;&lt;n))</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga7b9e28e0365aae4ba24226a7b8ca7aab">  101</a></span>&#160;<span class="preprocessor">#define ADC_INTEN_GLOBAL        ((1UL&lt;&lt;8))</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga6e5fc80635b66a16e87c6f0eea02bb9e">  107</a></span>&#160;<span class="preprocessor">#define ADC_DR_RESULT(n)        (((n&gt;&gt;4)&amp;0xFFF))</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gab986db68d1648ea9289e19c638bc426f">  110</a></span>&#160;<span class="preprocessor">#define ADC_DR_OVERRUN_FLAG     ((1UL&lt;&lt;30))</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga4581dfe457aed240077f7056c85d3701">  113</a></span>&#160;<span class="preprocessor">#define ADC_DR_DONE_FLAG        ((1UL&lt;&lt;31))</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga3d8a5e79535731489c9f437b5b6dfc22">  120</a></span>&#160;<span class="preprocessor">#define ADC_STAT_CH_DONE_FLAG(n)        ((n&amp;0xFF))</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga268b774c3d6647428bd3b8ccf1e6259b">  123</a></span>&#160;<span class="preprocessor">#define ADC_STAT_CH_OVERRUN_FLAG(n)     (((n&gt;&gt;8)&amp;0xFF))</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga892033a33c0bc770ef296788d3c550ce">  125</a></span>&#160;<span class="preprocessor">#define ADC_STAT_INT_FLAG               ((1UL&lt;&lt;16))</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gafb26866a9f6839e001914958e2300df4">  131</a></span>&#160;<span class="preprocessor">#define ADC_ADCOFFS(n)      (((n&amp;0xF)&lt;&lt;4))</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga5095c383bdbb7764a90487bb9de1ff50">  133</a></span>&#160;<span class="preprocessor">#define ADC_TRIM(n)         (((n&amp;0xF)&lt;&lt;8))</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">/* ------------------- CHECK PARAM DEFINITIONS ------------------------- */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga750a978ca74a82268d3a162c70688456">  137</a></span>&#160;<span class="preprocessor">#define PARAM_ADCx(n)    (((uint32_t *)n)==((uint32_t *)LPC_ADC))</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gaff76631e4cee59dae0f532d18249cc8b">  140</a></span>&#160;<span class="preprocessor">#define PARAM_ADC_START_ON_EDGE_OPT(OPT)    ((OPT == ADC_START_ON_RISING)||(OPT == ADC_START_ON_FALLING))</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gabb6491a7d4a7ee8575c22172c9717882">  143</a></span>&#160;<span class="preprocessor">#define PARAM_ADC_DATA_STATUS(OPT)    ((OPT== ADC_DATA_BURST)||(OPT== ADC_DATA_DONE))</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#gafd45b79a0403b26f9e44f2483ff05f7d">  146</a></span>&#160;<span class="preprocessor">#define PARAM_ADC_RATE(rate)    ((rate&gt;0)&amp;&amp;(rate&lt;=200000))</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga06cff5e9bcd2d79e18502f064441896b">  149</a></span>&#160;<span class="preprocessor">#define PARAM_ADC_CHANNEL_SELECTION(SEL)    ((SEL == ADC_CHANNEL_0)||(ADC_CHANNEL_1)\</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">||(SEL == ADC_CHANNEL_2)|(ADC_CHANNEL_3)\</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">||(SEL == ADC_CHANNEL_4)||(ADC_CHANNEL_5)\</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">||(SEL == ADC_CHANNEL_6)||(ADC_CHANNEL_7))</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga8032735d52173e6a2b6c8be0f4745e1d">  155</a></span>&#160;<span class="preprocessor">#define PARAM_ADC_START_OPT(OPT)    ((OPT == ADC_START_CONTINUOUS)||(OPT == ADC_START_NOW)\</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">||(OPT == ADC_START_ON_EINT0)||(OPT == ADC_START_ON_CAP01)\</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">||(OPT == ADC_START_ON_MAT01)||(OPT == ADC_START_ON_MAT03)\</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">||(OPT == ADC_START_ON_MAT10)||(OPT == ADC_START_ON_MAT11))</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group___a_d_c___private___macros.html#ga57ad8f333bf3d84458550ac3c03494cf">  161</a></span>&#160;<span class="preprocessor">#define PARAM_ADC_TYPE_INT_OPT(OPT)    ((OPT == ADC_ADINTEN0)||(OPT == ADC_ADINTEN1)\</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">||(OPT == ADC_ADINTEN2)||(OPT == ADC_ADINTEN3)\</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">||(OPT == ADC_ADINTEN4)||(OPT == ADC_ADINTEN5)\</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">||(OPT == ADC_ADINTEN6)||(OPT == ADC_ADINTEN7)\</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">||(OPT == ADC_ADGINTEN))</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">/* Public Types --------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ga89aa5114c80540103cfb71c4420b914b">  181</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba69dddf5b6edfe54ac25b653d8f62d104">  183</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba69dddf5b6edfe54ac25b653d8f62d104">ADC_CHANNEL_0</a>  = 0, </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba203b48944d019f4fda969a6fc2a9e492">  184</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba203b48944d019f4fda969a6fc2a9e492">ADC_CHANNEL_1</a>,      </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bab5ff3c915ec02ae6ac3980a1312a4815">  185</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bab5ff3c915ec02ae6ac3980a1312a4815">ADC_CHANNEL_2</a>,      </div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba6ca054f67bee5197eec92a0379cffb6e">  186</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba6ca054f67bee5197eec92a0379cffb6e">ADC_CHANNEL_3</a>,      </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba358c6f5e7243a7ed09640253d83d2131">  187</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba358c6f5e7243a7ed09640253d83d2131">ADC_CHANNEL_4</a>,      </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914badd27743e52a0719102130818d31d545a">  188</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914badd27743e52a0719102130818d31d545a">ADC_CHANNEL_5</a>,      </div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bacf3be71bfeb9d342e6d845db91782b79">  189</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bacf3be71bfeb9d342e6d845db91782b79">ADC_CHANNEL_6</a>,      </div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bad6ef86ca1b448f220905d771f258586a">  190</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bad6ef86ca1b448f220905d771f258586a">ADC_CHANNEL_7</a>       </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}<a class="code" href="group___a_d_c___public___types.html#ga89aa5114c80540103cfb71c4420b914b">ADC_CHANNEL_SELECTION</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gac6226b9af610bd4800b65ddfc93ee516">  194</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a5c995804004511aebc0e20fe090e24e7">  196</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a5c995804004511aebc0e20fe090e24e7">ADC_START_CONTINUOUS</a> =0,    </div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a0a0386df411db0ce22aeebf763bdaa21">  197</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a0a0386df411db0ce22aeebf763bdaa21">ADC_START_NOW</a>,              </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a8b2528c66233628acffe4cda93bf16f7">  198</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a8b2528c66233628acffe4cda93bf16f7">ADC_START_ON_EINT0</a>,         </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516aca377a8aae1e21e4a0fdcde3362e7c0b">  200</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516aca377a8aae1e21e4a0fdcde3362e7c0b">ADC_START_ON_CAP01</a>,         </div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516ac743dd82c64dc8e78e1cddc5f1d3ff7c">  202</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516ac743dd82c64dc8e78e1cddc5f1d3ff7c">ADC_START_ON_MAT01</a>,         </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516abca1d03376d47790622e41fbdee37bdb">  204</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516abca1d03376d47790622e41fbdee37bdb">ADC_START_ON_MAT03</a>,         </div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516ab89c287af37d98703eb71a853329fa7d">  206</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516ab89c287af37d98703eb71a853329fa7d">ADC_START_ON_MAT10</a>,         </div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a60213c70c0b3fd40c98ffa6aa2106391">  208</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a60213c70c0b3fd40c98ffa6aa2106391">ADC_START_ON_MAT11</a>          </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;} <a class="code" href="group___a_d_c___public___types.html#gac6226b9af610bd4800b65ddfc93ee516">ADC_START_OPT</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gaa9418cc298ccc8cf9631d9c0cfd6fdde">  214</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggaa9418cc298ccc8cf9631d9c0cfd6fddea83fc5534eeb9084bfa0c1d330612230d">  216</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggaa9418cc298ccc8cf9631d9c0cfd6fddea83fc5534eeb9084bfa0c1d330612230d">ADC_START_ON_RISING</a> = 0,    </div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggaa9418cc298ccc8cf9631d9c0cfd6fddea4077136f55b82e5a50684f4e4bc1fb74">  218</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggaa9418cc298ccc8cf9631d9c0cfd6fddea4077136f55b82e5a50684f4e4bc1fb74">ADC_START_ON_FALLING</a>        </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;} <a class="code" href="group___a_d_c___public___types.html#gaa9418cc298ccc8cf9631d9c0cfd6fdde">ADC_START_ON_EDGE_OPT</a>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gae7fc3523a8faf7363895609c07aba95b">  223</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba897f238c02c957515aa6f47fcbab5c95">  225</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba897f238c02c957515aa6f47fcbab5c95">ADC_ADINTEN0</a> = 0,       </div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95bacf04f25af4315389985fb62ea6526c2b">  226</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95bacf04f25af4315389985fb62ea6526c2b">ADC_ADINTEN1</a>,           </div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba17cc0e3e08ba5ccc3232766b216e1ff6">  227</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba17cc0e3e08ba5ccc3232766b216e1ff6">ADC_ADINTEN2</a>,           </div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba19c8e6062363e01e0ed7b2fc67872eb2">  228</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba19c8e6062363e01e0ed7b2fc67872eb2">ADC_ADINTEN3</a>,           </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95bad1c7cbdb1e5e778e359833390202e7eb">  229</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95bad1c7cbdb1e5e778e359833390202e7eb">ADC_ADINTEN4</a>,           </div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba9e09922ec07892458ce2b5593f3af485">  230</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba9e09922ec07892458ce2b5593f3af485">ADC_ADINTEN5</a>,           </div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95baa2c1ebb14ef504398f4b3bc30c40567e">  231</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95baa2c1ebb14ef504398f4b3bc30c40567e">ADC_ADINTEN6</a>,           </div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95baca3cefcfc951e755394130fbd42daba3">  232</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95baca3cefcfc951e755394130fbd42daba3">ADC_ADINTEN7</a>,           </div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba8d04f140aa5ed99528b4181569cc54f4">  233</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba8d04f140aa5ed99528b4181569cc54f4">ADC_ADGINTEN</a>            </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}<a class="code" href="group___a_d_c___public___types.html#gae7fc3523a8faf7363895609c07aba95b">ADC_TYPE_INT_OPT</a>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#gaedb5eb329a9f59e2565ef23c2199bcf1">  237</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;{</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggaedb5eb329a9f59e2565ef23c2199bcf1aaeb39c9b221ad96cfe7a57cbddd8ed6d">  239</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggaedb5eb329a9f59e2565ef23c2199bcf1aaeb39c9b221ad96cfe7a57cbddd8ed6d">ADC_DATA_BURST</a> = 0,     <span class="comment">/*Burst bit*/</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="group___a_d_c___public___types.html#ggaedb5eb329a9f59e2565ef23c2199bcf1a3d881288e499fc0ff834c515088f1bce">  240</a></span>&#160;    <a class="code" href="group___a_d_c___public___types.html#ggaedb5eb329a9f59e2565ef23c2199bcf1a3d881288e499fc0ff834c515088f1bce">ADC_DATA_DONE</a>        <span class="comment">/*Done bit*/</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}<a class="code" href="group___a_d_c___public___types.html#gaedb5eb329a9f59e2565ef23c2199bcf1">ADC_DATA_STATUS</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">/* Public Functions ----------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">/* Init/DeInit ADC peripheral ----------------*/</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#ga478a74858b834fc4352ed572cef09f08">ADC_Init</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint32_t rate);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#ga912f61184ead8b2b21a2ab2da93b38c2">ADC_DeInit</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">/* Enable/Disable ADC functions --------------*/</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#ga71ac27ff07336f95a4cb0c66879d5c09">ADC_BurstCmd</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, <a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> NewState);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#ga89387c7f3a10bd4a8d4c70383c7072c1">ADC_PowerdownCmd</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, <a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> NewState);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#gac77395a6417558abde3d2886c3ebf3c8">ADC_StartCmd</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint8_t start_mode);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#gac59b7d9bf60e7cd0e83bac8e0fb4657c">ADC_ChannelCmd</a> (<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint8_t Channel, <a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> NewState);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">/* Configure ADC functions -------------------*/</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#gad10189df1242c1491192f763b7a58e87">ADC_EdgeStartConfig</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint8_t EdgeOption);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_d_c___public___functions.html#ga96740e60124bcd6beeb7ba865fafef81">ADC_IntConfig</a> (<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, <a class="code" href="group___a_d_c___public___types.html#gae7fc3523a8faf7363895609c07aba95b">ADC_TYPE_INT_OPT</a> IntType, <a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> NewState);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">/* Get ADC information functions -------------------*/</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;uint16_t <a class="code" href="group___a_d_c___public___functions.html#ga7a2961a052fb215c081d88c71ac80234">ADC_ChannelGetData</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint8_t channel);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<a class="code" href="group___l_p_c___types___public___types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a> <a class="code" href="group___a_d_c___public___functions.html#ga98b54a5834ffc73d5249682785af7c54">ADC_ChannelGetStatus</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint8_t channel, uint32_t StatusType);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;uint32_t <a class="code" href="group___a_d_c___public___functions.html#ga9a8d8047580407a553b485fd91389eac">ADC_GlobalGetData</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<a class="code" href="group___l_p_c___types___public___types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a>  <a class="code" href="group___a_d_c___public___functions.html#gab6e90920fdfc81fa1029c4810edcd547">ADC_GlobalGetStatus</a>(<a class="code" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a> *ADCx, uint32_t StatusType);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LPC17XX_ADC_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">/* --------------------------------- End Of File ------------------------------ */</span></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggaa9418cc298ccc8cf9631d9c0cfd6fddea83fc5534eeb9084bfa0c1d330612230d"><div class="ttname"><a href="group___a_d_c___public___types.html#ggaa9418cc298ccc8cf9631d9c0cfd6fddea83fc5534eeb9084bfa0c1d330612230d">ADC_START_ON_RISING</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:216</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516a60213c70c0b3fd40c98ffa6aa2106391"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a60213c70c0b3fd40c98ffa6aa2106391">ADC_START_ON_MAT11</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:208</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95ba17cc0e3e08ba5ccc3232766b216e1ff6"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba17cc0e3e08ba5ccc3232766b216e1ff6">ADC_ADINTEN2</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:227</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga98b54a5834ffc73d5249682785af7c54"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga98b54a5834ffc73d5249682785af7c54">ADC_ChannelGetStatus</a></div><div class="ttdeci">FlagStatus ADC_ChannelGetStatus(LPC_ADC_TypeDef *ADCx, uint8_t channel, uint32_t StatusType)</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_gad10189df1242c1491192f763b7a58e87"><div class="ttname"><a href="group___a_d_c___public___functions.html#gad10189df1242c1491192f763b7a58e87">ADC_EdgeStartConfig</a></div><div class="ttdeci">void ADC_EdgeStartConfig(LPC_ADC_TypeDef *ADCx, uint8_t EdgeOption)</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggaedb5eb329a9f59e2565ef23c2199bcf1aaeb39c9b221ad96cfe7a57cbddd8ed6d"><div class="ttname"><a href="group___a_d_c___public___types.html#ggaedb5eb329a9f59e2565ef23c2199bcf1aaeb39c9b221ad96cfe7a57cbddd8ed6d">ADC_DATA_BURST</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:239</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516abca1d03376d47790622e41fbdee37bdb"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516abca1d03376d47790622e41fbdee37bdb">ADC_START_ON_MAT03</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:204</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga478a74858b834fc4352ed572cef09f08"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga478a74858b834fc4352ed572cef09f08">ADC_Init</a></div><div class="ttdeci">void ADC_Init(LPC_ADC_TypeDef *ADCx, uint32_t rate)</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95bad1c7cbdb1e5e778e359833390202e7eb"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95bad1c7cbdb1e5e778e359833390202e7eb">ADC_ADINTEN4</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:229</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914ba203b48944d019f4fda969a6fc2a9e492"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba203b48944d019f4fda969a6fc2a9e492">ADC_CHANNEL_1</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:184</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95ba8d04f140aa5ed99528b4181569cc54f4"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba8d04f140aa5ed99528b4181569cc54f4">ADC_ADGINTEN</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:233</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_gac77395a6417558abde3d2886c3ebf3c8"><div class="ttname"><a href="group___a_d_c___public___functions.html#gac77395a6417558abde3d2886c3ebf3c8">ADC_StartCmd</a></div><div class="ttdeci">void ADC_StartCmd(LPC_ADC_TypeDef *ADCx, uint8_t start_mode)</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga7a2961a052fb215c081d88c71ac80234"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga7a2961a052fb215c081d88c71ac80234">ADC_ChannelGetData</a></div><div class="ttdeci">uint16_t ADC_ChannelGetData(LPC_ADC_TypeDef *ADCx, uint8_t channel)</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95bacf04f25af4315389985fb62ea6526c2b"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95bacf04f25af4315389985fb62ea6526c2b">ADC_ADINTEN1</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:226</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914ba358c6f5e7243a7ed09640253d83d2131"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba358c6f5e7243a7ed09640253d83d2131">ADC_CHANNEL_4</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:187</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516ab89c287af37d98703eb71a853329fa7d"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516ab89c287af37d98703eb71a853329fa7d">ADC_START_ON_MAT10</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:206</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95ba897f238c02c957515aa6f47fcbab5c95"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba897f238c02c957515aa6f47fcbab5c95">ADC_ADINTEN0</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:225</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga9a8d8047580407a553b485fd91389eac"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga9a8d8047580407a553b485fd91389eac">ADC_GlobalGetData</a></div><div class="ttdeci">uint32_t ADC_GlobalGetData(LPC_ADC_TypeDef *ADCx)</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdoc">Functional State Definition. </div><div class="ttdef"><b>Definition:</b> lpc_types.h:55</div></div>
+<div class="ttc" id="struct_l_p_c___a_d_c___type_def_html"><div class="ttname"><a href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a></div><div class="ttdoc">Analog-to-Digital Converter (ADC) register structure definition. </div><div class="ttdef"><b>Definition:</b> LPC17xx.h:596</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95ba9e09922ec07892458ce2b5593f3af485"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba9e09922ec07892458ce2b5593f3af485">ADC_ADINTEN5</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:230</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914bab5ff3c915ec02ae6ac3980a1312a4815"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bab5ff3c915ec02ae6ac3980a1312a4815">ADC_CHANNEL_2</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:185</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggaedb5eb329a9f59e2565ef23c2199bcf1a3d881288e499fc0ff834c515088f1bce"><div class="ttname"><a href="group___a_d_c___public___types.html#ggaedb5eb329a9f59e2565ef23c2199bcf1a3d881288e499fc0ff834c515088f1bce">ADC_DATA_DONE</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:240</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_gab6e90920fdfc81fa1029c4810edcd547"><div class="ttname"><a href="group___a_d_c___public___functions.html#gab6e90920fdfc81fa1029c4810edcd547">ADC_GlobalGetStatus</a></div><div class="ttdeci">FlagStatus ADC_GlobalGetStatus(LPC_ADC_TypeDef *ADCx, uint32_t StatusType)</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga71ac27ff07336f95a4cb0c66879d5c09"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga71ac27ff07336f95a4cb0c66879d5c09">ADC_BurstCmd</a></div><div class="ttdeci">void ADC_BurstCmd(LPC_ADC_TypeDef *ADCx, FunctionalState NewState)</div></div>
+<div class="ttc" id="lpc__types_8h_html"><div class="ttname"><a href="lpc__types_8h.html">lpc_types.h</a></div><div class="ttdoc">Contains the NXP ABL typedefs for C standard types. It is intended to be used in ISO C conforming dev...</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914ba69dddf5b6edfe54ac25b653d8f62d104"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba69dddf5b6edfe54ac25b653d8f62d104">ADC_CHANNEL_0</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:183</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ga89aa5114c80540103cfb71c4420b914b"><div class="ttname"><a href="group___a_d_c___public___types.html#ga89aa5114c80540103cfb71c4420b914b">ADC_CHANNEL_SELECTION</a></div><div class="ttdeci">ADC_CHANNEL_SELECTION</div><div class="ttdoc">ADC enumeration. </div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:181</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914badd27743e52a0719102130818d31d545a"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914badd27743e52a0719102130818d31d545a">ADC_CHANNEL_5</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:188</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516a5c995804004511aebc0e20fe090e24e7"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a5c995804004511aebc0e20fe090e24e7">ADC_START_CONTINUOUS</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:196</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516aca377a8aae1e21e4a0fdcde3362e7c0b"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516aca377a8aae1e21e4a0fdcde3362e7c0b">ADC_START_ON_CAP01</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:200</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga89387c7f3a10bd4a8d4c70383c7072c1"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga89387c7f3a10bd4a8d4c70383c7072c1">ADC_PowerdownCmd</a></div><div class="ttdeci">void ADC_PowerdownCmd(LPC_ADC_TypeDef *ADCx, FunctionalState NewState)</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga912f61184ead8b2b21a2ab2da93b38c2"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga912f61184ead8b2b21a2ab2da93b38c2">ADC_DeInit</a></div><div class="ttdeci">void ADC_DeInit(LPC_ADC_TypeDef *ADCx)</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914bacf3be71bfeb9d342e6d845db91782b79"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bacf3be71bfeb9d342e6d845db91782b79">ADC_CHANNEL_6</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:189</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95ba19c8e6062363e01e0ed7b2fc67872eb2"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95ba19c8e6062363e01e0ed7b2fc67872eb2">ADC_ADINTEN3</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:228</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_ga96740e60124bcd6beeb7ba865fafef81"><div class="ttname"><a href="group___a_d_c___public___functions.html#ga96740e60124bcd6beeb7ba865fafef81">ADC_IntConfig</a></div><div class="ttdeci">void ADC_IntConfig(LPC_ADC_TypeDef *ADCx, ADC_TYPE_INT_OPT IntType, FunctionalState NewState)</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914ba6ca054f67bee5197eec92a0379cffb6e"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914ba6ca054f67bee5197eec92a0379cffb6e">ADC_CHANNEL_3</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:186</div></div>
+<div class="ttc" id="group___a_d_c___public___functions_html_gac59b7d9bf60e7cd0e83bac8e0fb4657c"><div class="ttname"><a href="group___a_d_c___public___functions.html#gac59b7d9bf60e7cd0e83bac8e0fb4657c">ADC_ChannelCmd</a></div><div class="ttdeci">void ADC_ChannelCmd(LPC_ADC_TypeDef *ADCx, uint8_t Channel, FunctionalState NewState)</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516a8b2528c66233628acffe4cda93bf16f7"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a8b2528c66233628acffe4cda93bf16f7">ADC_START_ON_EINT0</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:198</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gae7fc3523a8faf7363895609c07aba95b"><div class="ttname"><a href="group___a_d_c___public___types.html#gae7fc3523a8faf7363895609c07aba95b">ADC_TYPE_INT_OPT</a></div><div class="ttdeci">ADC_TYPE_INT_OPT</div><div class="ttdoc">ADC type interrupt enum </div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:223</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gac6226b9af610bd4800b65ddfc93ee516"><div class="ttname"><a href="group___a_d_c___public___types.html#gac6226b9af610bd4800b65ddfc93ee516">ADC_START_OPT</a></div><div class="ttdeci">ADC_START_OPT</div><div class="ttdoc">Type of start option. </div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:194</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga89136caac2e14c55151f527ac02daaff"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a></div><div class="ttdeci">FlagStatus</div><div class="ttdoc">Flag Status and Interrupt Flag Status type definition. </div><div class="ttdef"><b>Definition:</b> lpc_types.h:49</div></div>
+<div class="ttc" id="_l_p_c17xx_8h_html"><div class="ttname"><a href="_l_p_c17xx_8h.html">LPC17xx.h</a></div><div class="ttdoc">CMSIS Cortex-M3 Core Peripheral Access Layer Header File for NXP LPC17xx Device Series. </div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95baa2c1ebb14ef504398f4b3bc30c40567e"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95baa2c1ebb14ef504398f4b3bc30c40567e">ADC_ADINTEN6</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:231</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gaa9418cc298ccc8cf9631d9c0cfd6fdde"><div class="ttname"><a href="group___a_d_c___public___types.html#gaa9418cc298ccc8cf9631d9c0cfd6fdde">ADC_START_ON_EDGE_OPT</a></div><div class="ttdeci">ADC_START_ON_EDGE_OPT</div><div class="ttdoc">Type of edge when start conversion on the selected CAP/MAT signal. </div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:214</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggae7fc3523a8faf7363895609c07aba95baca3cefcfc951e755394130fbd42daba3"><div class="ttname"><a href="group___a_d_c___public___types.html#ggae7fc3523a8faf7363895609c07aba95baca3cefcfc951e755394130fbd42daba3">ADC_ADINTEN7</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:232</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516a0a0386df411db0ce22aeebf763bdaa21"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516a0a0386df411db0ce22aeebf763bdaa21">ADC_START_NOW</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:197</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggac6226b9af610bd4800b65ddfc93ee516ac743dd82c64dc8e78e1cddc5f1d3ff7c"><div class="ttname"><a href="group___a_d_c___public___types.html#ggac6226b9af610bd4800b65ddfc93ee516ac743dd82c64dc8e78e1cddc5f1d3ff7c">ADC_START_ON_MAT01</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:202</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_ggaa9418cc298ccc8cf9631d9c0cfd6fddea4077136f55b82e5a50684f4e4bc1fb74"><div class="ttname"><a href="group___a_d_c___public___types.html#ggaa9418cc298ccc8cf9631d9c0cfd6fddea4077136f55b82e5a50684f4e4bc1fb74">ADC_START_ON_FALLING</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:218</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gga89aa5114c80540103cfb71c4420b914bad6ef86ca1b448f220905d771f258586a"><div class="ttname"><a href="group___a_d_c___public___types.html#gga89aa5114c80540103cfb71c4420b914bad6ef86ca1b448f220905d771f258586a">ADC_CHANNEL_7</a></div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:190</div></div>
+<div class="ttc" id="group___a_d_c___public___types_html_gaedb5eb329a9f59e2565ef23c2199bcf1"><div class="ttname"><a href="group___a_d_c___public___types.html#gaedb5eb329a9f59e2565ef23c2199bcf1">ADC_DATA_STATUS</a></div><div class="ttdeci">ADC_DATA_STATUS</div><div class="ttdoc">ADC Data status. </div><div class="ttdef"><b>Definition:</b> lpc17xx_adc.h:237</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5d2383f45e8a641cfe91139641418536.html">Ansteuerung_ADC_Bluetooth</a></li><li class="navelem"><a class="el" href="dir_c579899fdbc2f70437c10f65026aa2fd.html">lpc17xx_lib</a></li><li class="navelem"><a class="el" href="dir_46d959d23ce2d95f5008ff5b8615635f.html">include</a></li><li class="navelem"><a class="el" href="lpc17xx__adc_8h.html">lpc17xx_adc.h</a></li>
+    <li class="footer">Erzeugt am Sam Jun 27 2015 17:45:33 für ADC-Bluetooth von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

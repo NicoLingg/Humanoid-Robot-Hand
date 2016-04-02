@@ -1,0 +1,28 @@
+<map id="lc798x_wait_for_ready" name="lc798x_wait_for_ready">
+<area shape="rect" id="node2" href="$lc798x_8c.html#aadaccfff3a85ee0924556a54fa9d3014" title="lcd_write" alt="" coords="204,284,277,311"/>
+<area shape="rect" id="node27" href="$lc798x_8c.html#ad10c5f8524dbd78db29ea99633ba883f" title="lcd_read" alt="" coords="205,335,276,361"/>
+<area shape="rect" id="node3" href="$lc798x_8c.html#a08d0b7df8efda0c3b5af2955cccae65f" title="lc798x_register" alt="" coords="325,157,436,184"/>
+<area shape="rect" id="node9" href="$lc798x_8h.html#a7327a2088a6342e03a124c2335c73520" title="lcd_newline" alt="" coords="694,360,783,387"/>
+<area shape="rect" id="node10" href="$lc798x_8h.html#a5330b79372b260630a9049c60b1fefa3" title="lcd_putchar" alt="" coords="847,360,936,387"/>
+<area shape="rect" id="node20" href="$lc798x_8h.html#ae4dc23fdf26f3b8b0db253f431fe950d" title="lcd_clear_screen" alt="" coords="679,259,799,285"/>
+<area shape="rect" id="node4" href="$lc798x_8h.html#ab3d0dfc4d013131dcd9abc5a83d89202" title="lcd_set_system" alt="" coords="681,5,796,32"/>
+<area shape="rect" id="node8" href="$lc798x_8c.html#a05a4580ffdbd23deca7104bff0b9d7e8" title="lcd_set_layout" alt="" coords="504,309,611,336"/>
+<area shape="rect" id="node21" href="$lc798x_8h.html#a43fd8a89dbc4006d2d0121106bac3d47" title="lcd_set_cursor" alt="" coords="504,259,611,285"/>
+<area shape="rect" id="node22" href="$lc798x_8h.html#a0978fc4c2fabee79c3664fc950d0cddd" title="lcd_set_cursor_mode" alt="" coords="484,56,631,83"/>
+<area shape="rect" id="node23" href="$lc798x_8h.html#aee7003d4222c1b4689d85a8f787cb371" title="lcd_control" alt="" coords="515,157,600,184"/>
+<area shape="rect" id="node24" href="$lc798x_8h.html#a55f6837b5f9dc94c19063727ccbbe7b7" title="lcd_write_pixel" alt="" coords="504,107,611,133"/>
+<area shape="rect" id="node5" href="$main_8c.html#aa53c9d40f3aa552a9974cd55ac510cb3" title="LCD&#45;Initialisierung: " alt="" coords="856,132,927,159"/>
+<area shape="rect" id="node6" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main&#45;Programm: " alt="" coords="997,132,1047,159"/>
+<area shape="rect" id="node7" href="$startup___l_p_c17xx_8c.html#a0b25f0c80528ba782dfb09214c5b1737" title="This is the code that gets called when the processor first starts execution following a reset event..." alt="" coords="1108,132,1263,159"/>
+<area shape="rect" id="node11" href="$printf_8c.html#aac7233dce0ef357b1ea507667a7b6e07" title="Transmit a char, if you want to use printf(), you need implement this function. " alt="" coords="984,360,1060,387"/>
+<area shape="rect" id="node12" href="$printf_8c.html#a25c4b74226a8a3a0d6eef3a072be087b" title="Implementation of fputc using the DBGU as the standard output. Required for printf(). " alt="" coords="1160,360,1211,387"/>
+<area shape="rect" id="node13" href="$printf_8c.html#ad870e26ae50d712bb504aa4b067802f4" title="Implementation of fputs using the DBGU as the standard output. Required for printf(). " alt="" coords="1311,360,1361,387"/>
+<area shape="rect" id="node14" href="$printf_8c.html#a4c938d1cedba90cbc8107400ebea6100" title="Outputs a formatted string on the given stream. Format arguments are given in a va_list instance..." alt="" coords="1409,335,1468,361"/>
+<area shape="rect" id="node19" href="$printf_8c.html#a5a8c5f197e584138be351a4437f67689" title="Outputs a string on stdout. " alt="" coords="1415,385,1462,412"/>
+<area shape="rect" id="node15" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="1516,309,1571,336"/>
+<area shape="rect" id="node18" href="$printf_8c.html#a714a7aeb0b480bc7cc85c1685964861f" title="Outputs a formatted string on the given stream, using a variable number of arguments. " alt="" coords="1517,360,1570,387"/>
+<area shape="rect" id="node16" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="1619,309,1669,336"/>
+<area shape="rect" id="node17" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="UARTPutDec32: " alt="" coords="1717,309,1831,336"/>
+<area shape="rect" id="node25" href="$lc798x_8h.html#a6bdde57a8b3f7b6761e1c9e0499f6763" title="lcd_line" alt="" coords="705,157,772,184"/>
+<area shape="rect" id="node26" href="$lc798x_8h.html#ae2312d974f755b43cf5cb9e18b1b236c" title="lcd_ellipse" alt="" coords="697,107,780,133"/>
+</map>

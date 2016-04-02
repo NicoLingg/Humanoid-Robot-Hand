@@ -1,0 +1,6 @@
+<map id="vfprintf" name="vfprintf">
+<area shape="rect" id="node2" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="112,5,167,32"/>
+<area shape="rect" id="node5" href="$printf_8c.html#a714a7aeb0b480bc7cc85c1685964861f" title="Outputs a formatted string on the given stream, using a variable number of arguments. " alt="" coords="113,56,166,83"/>
+<area shape="rect" id="node3" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="215,5,265,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="UARTPutDec32: " alt="" coords="313,5,427,32"/>
+</map>

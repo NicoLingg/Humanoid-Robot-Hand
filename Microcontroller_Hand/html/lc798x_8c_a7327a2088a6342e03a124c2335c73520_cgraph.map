@@ -1,0 +1,7 @@
+<map id="lcd_newline" name="lcd_newline">
+<area shape="rect" id="node2" href="$lc798x_8c.html#a43fd8a89dbc4006d2d0121106bac3d47" title="lcd_set_cursor" alt="" coords="143,5,249,32"/>
+<area shape="rect" id="node4" href="$lc798x_8c.html#aadaccfff3a85ee0924556a54fa9d3014" title="lcd_write" alt="" coords="456,81,529,108"/>
+<area shape="rect" id="node6" href="$lc798x_8c.html#a05a4580ffdbd23deca7104bff0b9d7e8" title="lcd_set_layout" alt="" coords="143,56,249,83"/>
+<area shape="rect" id="node3" href="$lc798x_8c.html#a08d0b7df8efda0c3b5af2955cccae65f" title="lc798x_register" alt="" coords="297,56,408,83"/>
+<area shape="rect" id="node5" href="$lc798x_8c.html#a6df91edebc1cc2015e9d66bf34b20d92" title="lc798x_wait_for_ready" alt="" coords="577,81,728,108"/>
+</map>

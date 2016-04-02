@@ -1,0 +1,29 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8c.html#aa53c9d40f3aa552a9974cd55ac510cb3" title="LCD&#45;Initialisierung: " alt="" coords="141,119,211,146"/>
+<area shape="rect" id="node13" href="$main_8c.html#a214f9bddb23c4dfb666c9c206d9ba8dd" title="UART&#45;Initialisierung: " alt="" coords="131,372,221,399"/>
+<area shape="rect" id="node19" href="$main_8c.html#a55d8015ece045b7dc151239bc45e3334" title="AD&#45;Wandler initialisieren: " alt="" coords="111,550,241,576"/>
+<area shape="rect" id="node24" href="$main_8c.html#a29d1451567c991dda1a4f08b645d0c08" title="AD&#45;Wandler Burst Read: " alt="" coords="104,600,248,627"/>
+<area shape="rect" id="node27" href="$group___u_a_r_t___public___functions.html#gadeb1a6a95247931abb93fa49571ae51c" title="UART_Send" alt="" coords="129,651,223,678"/>
+<area shape="rect" id="node28" href="$main_8c.html#a3dccc2054070aae79797f9363482420e" title="Warte&#45;Funktion mit Timer0: " alt="" coords="117,702,235,728"/>
+<area shape="rect" id="node3" href="$lc798x_8c.html#a33bc1020b824d17ab27d3fe752420d76" title="lcd_init_interface" alt="" coords="327,43,445,70"/>
+<area shape="rect" id="node4" href="$lc798x_8c.html#ab3d0dfc4d013131dcd9abc5a83d89202" title="lcd_set_system" alt="" coords="540,82,655,108"/>
+<area shape="rect" id="node8" href="$lc798x_8c.html#a0978fc4c2fabee79c3664fc950d0cddd" title="lcd_set_cursor_mode" alt="" coords="524,132,671,159"/>
+<area shape="rect" id="node9" href="$lc798x_8c.html#ae4dc23fdf26f3b8b0db253f431fe950d" title="lcd_clear_screen" alt="" coords="326,195,446,222"/>
+<area shape="rect" id="node12" href="$lc798x_8c.html#aee7003d4222c1b4689d85a8f787cb371" title="lcd_control" alt="" coords="555,6,640,32"/>
+<area shape="rect" id="node5" href="$lc798x_8c.html#a08d0b7df8efda0c3b5af2955cccae65f" title="lc798x_register" alt="" coords="719,158,829,184"/>
+<area shape="rect" id="node6" href="$lc798x_8c.html#aadaccfff3a85ee0924556a54fa9d3014" title="lcd_write" alt="" coords="877,222,951,248"/>
+<area shape="rect" id="node7" href="$lc798x_8c.html#a6df91edebc1cc2015e9d66bf34b20d92" title="lc798x_wait_for_ready" alt="" coords="999,222,1149,248"/>
+<area shape="rect" id="node10" href="$lc798x_8c.html#a05a4580ffdbd23deca7104bff0b9d7e8" title="lcd_set_layout" alt="" coords="544,234,651,260"/>
+<area shape="rect" id="node11" href="$lc798x_8c.html#a43fd8a89dbc4006d2d0121106bac3d47" title="lcd_set_cursor" alt="" coords="544,183,651,210"/>
+<area shape="rect" id="node14" href="$group___p_i_n_s_e_l___public___functions.html#ga771fcbed8f7ee806292e06e283611dc9" title="Configure Pin corresponding to specified parameters passed in the PinCfg. " alt="" coords="321,448,451,475"/>
+<area shape="rect" id="node15" href="$group___u_a_r_t___public___functions.html#ga38648a309b0eb01e488f593f93fd9e02" title="UART_Init" alt="" coords="346,246,426,272"/>
+<area shape="rect" id="node16" href="$group___u_a_r_t___public___functions.html#ga84c4e278cf63acef81e359b76d28319a" title="UART_FIFOConfigStructInit" alt="" coords="296,296,476,323"/>
+<area shape="rect" id="node17" href="$group___u_a_r_t___public___functions.html#ga91f3bb9558513f4a1da4163997bd198b" title="UART_FIFOConfig" alt="" coords="322,347,450,374"/>
+<area shape="rect" id="node18" href="$group___u_a_r_t___public___functions.html#ga3400356ef61d3735d9d10e04e0e95df4" title="UART_TxCmd" alt="" coords="334,398,438,424"/>
+<area shape="rect" id="node20" href="$group___a_d_c___public___functions.html#ga478a74858b834fc4352ed572cef09f08" title="ADC_Init" alt="" coords="349,499,423,526"/>
+<area shape="rect" id="node21" href="$group___a_d_c___public___functions.html#gac59b7d9bf60e7cd0e83bac8e0fb4657c" title="ADC_ChannelCmd" alt="" coords="321,550,451,576"/>
+<area shape="rect" id="node22" href="$group___a_d_c___public___functions.html#gac77395a6417558abde3d2886c3ebf3c8" title="ADC_StartCmd" alt="" coords="331,600,441,627"/>
+<area shape="rect" id="node23" href="$group___a_d_c___public___functions.html#ga71ac27ff07336f95a4cb0c66879d5c09" title="ADC_BurstCmd" alt="" coords="329,651,443,678"/>
+<area shape="rect" id="node25" href="$group___a_d_c___public___functions.html#ga98b54a5834ffc73d5249682785af7c54" title="ADC_ChannelGetStatus" alt="" coords="305,702,467,728"/>
+<area shape="rect" id="node26" href="$group___a_d_c___public___functions.html#ga7a2961a052fb215c081d88c71ac80234" title="ADC_ChannelGetData" alt="" coords="311,752,461,779"/>
+</map>

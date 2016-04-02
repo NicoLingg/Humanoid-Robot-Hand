@@ -1,0 +1,5 @@
+<map id="Ansteuerung_Motor_Bluetooth/lpc17xx_lib/include/lpc17xx_clkpwr.h" name="Ansteuerung_Motor_Bluetooth/lpc17xx_lib/include/lpc17xx_clkpwr.h">
+<area shape="rect" id="node2" href="$lpc17xx__clkpwr_8c.html" title="Contains all functions support for Clock and Power Control firmware library on LPC17xx. " alt="" coords="5,109,203,165"/>
+<area shape="rect" id="node3" href="$lpc17xx__pwm_8c.html" title="Contains all functions support for PWM firmware library on LPC17xx. " alt="" coords="227,117,455,158"/>
+<area shape="rect" id="node4" href="$lpc17xx__uart_8c.html" title="Contains all functions support for UART firmware library on LPC17xx. " alt="" coords="479,117,702,158"/>
+</map>

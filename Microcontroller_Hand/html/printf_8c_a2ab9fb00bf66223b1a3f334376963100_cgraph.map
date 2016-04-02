@@ -1,0 +1,9 @@
+<map id="sprintf" name="sprintf">
+<area shape="rect" id="node2" href="$printf_8c.html#ac2bd6c4c9ad1b563bdcd20f18a36811a" title="Stores the result of a formatted string into another string. Format arguments are given in a va_list ..." alt="" coords="111,107,173,133"/>
+<area shape="rect" id="node3" href="$printf_8c.html#a8f2d28f08e5d66db9a14ed70cb1f4220" title="Stores the result of a formatted string into another string. Format arguments are given in a va_list ..." alt="" coords="221,107,291,133"/>
+<area shape="rect" id="node4" href="$printf_8c.html#ae7337166e7d8bcc7d589e63777ae2541" title="Writes a signed int inside the given string, using the provided fill &amp; width parameters. " alt="" coords="346,5,442,32"/>
+<area shape="rect" id="node5" href="$printf_8c.html#a9d6957a52d69935cd92755844e9252be" title="Writes a character inside the given string. Returns 1. " alt="" coords="497,81,567,108"/>
+<area shape="rect" id="node6" href="$printf_8c.html#afeda5b1cd1c8e201b2fc997b35d03281" title="Writes an unsigned int inside the given string, using the provided fill &amp; width parameters. " alt="" coords="339,107,449,133"/>
+<area shape="rect" id="node7" href="$printf_8c.html#a3b3bdb18a334228eb2b08b1a70c1a62a" title="Writes an hexadecimal value into a string, using the given fill, width &amp; capital parameters. " alt="" coords="358,157,430,184"/>
+<area shape="rect" id="node8" href="$printf_8c.html#a9692c423423d4787d69f090a359c5644" title="Writes a string inside the given string. " alt="" coords="356,208,432,235"/>
+</map>

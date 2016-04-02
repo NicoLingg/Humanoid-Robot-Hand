@@ -1,0 +1,8 @@
+<map id="fputs" name="fputs">
+<area shape="rect" id="node2" href="$printf_8c.html#a4c938d1cedba90cbc8107400ebea6100" title="Outputs a formatted string on the given stream. Format arguments are given in a va_list instance..." alt="" coords="104,31,163,57"/>
+<area shape="rect" id="node7" href="$printf_8c.html#a5a8c5f197e584138be351a4437f67689" title="Outputs a string on stdout. " alt="" coords="110,81,157,108"/>
+<area shape="rect" id="node3" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="211,5,265,32"/>
+<area shape="rect" id="node6" href="$printf_8c.html#a714a7aeb0b480bc7cc85c1685964861f" title="Outputs a formatted string on the given stream, using a variable number of arguments. " alt="" coords="211,56,265,83"/>
+<area shape="rect" id="node4" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="313,5,364,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="UARTPutDec32: " alt="" coords="412,5,525,32"/>
+</map>

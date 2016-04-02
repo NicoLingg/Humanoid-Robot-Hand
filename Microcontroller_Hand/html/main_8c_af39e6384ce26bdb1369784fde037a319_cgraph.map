@@ -1,0 +1,11 @@
+<map id="PWM_DualEdge" name="PWM_DualEdge">
+<area shape="rect" id="node2" href="$group___p_w_m___public___functions.html#ga6012759589458b1ec053fe75d4e3b156" title="PWM_Init" alt="" coords="205,5,284,32"/>
+<area shape="rect" id="node3" href="$group___p_i_n_s_e_l___public___functions.html#ga771fcbed8f7ee806292e06e283611dc9" title="Configure Pin corresponding to specified parameters passed in the PinCfg. " alt="" coords="179,56,310,83"/>
+<area shape="rect" id="node4" href="$group___p_w_m___public___functions.html#ga1f0927b98fd5eb68c820b8fbf0268164" title="PWM_MatchUpdate" alt="" coords="175,107,314,133"/>
+<area shape="rect" id="node5" href="$group___p_w_m___public___functions.html#gac2a214e55fe2994251eae4efcad1ba81" title="PWM_ConfigMatch" alt="" coords="177,157,312,184"/>
+<area shape="rect" id="node6" href="$group___p_w_m___public___functions.html#ga655a4373a1a7c420a39da54aaef79196" title="PWM_ChannelConfig" alt="" coords="172,208,317,235"/>
+<area shape="rect" id="node7" href="$group___p_w_m___public___functions.html#gafdeb99d7221d80a71b741cac2461c671" title="PWM_ChannelCmd" alt="" coords="177,259,313,285"/>
+<area shape="rect" id="node8" href="$group___p_w_m___public___functions.html#ga2c34440e62bdb2030a72b54f66dc6a3f" title="PWM_ResetCounter" alt="" coords="174,309,315,336"/>
+<area shape="rect" id="node9" href="$group___p_w_m___public___functions.html#ga237d47eddfbbf747fd97eaed1e79336c" title="PWM_CounterCmd" alt="" coords="177,360,312,387"/>
+<area shape="rect" id="node10" href="$group___p_w_m___public___functions.html#ga324784f12861403b86424167c01b9c08" title="PWM_Cmd" alt="" coords="200,411,289,437"/>
+</map>

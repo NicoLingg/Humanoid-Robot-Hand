@@ -1,0 +1,6 @@
+<map id="lcd_line" name="lcd_line">
+<area shape="rect" id="node2" href="$lc798x_8c.html#a55f6837b5f9dc94c19063727ccbbe7b7" title="lcd_write_pixel" alt="" coords="120,5,227,32"/>
+<area shape="rect" id="node3" href="$lc798x_8c.html#a08d0b7df8efda0c3b5af2955cccae65f" title="lc798x_register" alt="" coords="275,5,385,32"/>
+<area shape="rect" id="node4" href="$lc798x_8c.html#aadaccfff3a85ee0924556a54fa9d3014" title="lcd_write" alt="" coords="433,5,507,32"/>
+<area shape="rect" id="node5" href="$lc798x_8c.html#a6df91edebc1cc2015e9d66bf34b20d92" title="lc798x_wait_for_ready" alt="" coords="555,5,705,32"/>
+</map>

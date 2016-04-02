@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>ADC-Bluetooth: Ansteuerung_ADC_Bluetooth/lpc17xx_lib/include/lpc_types.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ADC-Bluetooth
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Nico Lingg</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="annotated.html"><span>Datenstrukturen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lpc__types_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lpc_types.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lpc__types_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***********************************************************************/</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/* Type group ----------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef LPC_TYPES_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define LPC_TYPES_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* Includes ------------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* Public Types --------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gga39db6982619d623273fad8a383489309aa82764c3079aea4e60c80e45befbb839">   44</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="group___l_p_c___types___public___types.html#gga39db6982619d623273fad8a383489309aa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a> = 0, <a class="code" href="group___l_p_c___types___public___types.html#gga39db6982619d623273fad8a383489309aa82764c3079aea4e60c80e45befbb839">TRUE</a> = !<a class="code" href="group___l_p_c___types___public___types.html#gga39db6982619d623273fad8a383489309aa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>} <a class="code" href="group___l_p_c___types___public___types.html#ga39db6982619d623273fad8a383489309">Bool</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">   49</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="group___l_p_c___types___public___types.html#gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a> = 0, <a class="code" href="group___l_p_c___types___public___types.html#gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a> = !<a class="code" href="group___l_p_c___types___public___types.html#gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a>} <a class="code" href="group___l_p_c___types___public___types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a>, <a class="code" href="group___l_p_c___types___public___types.html#gab7d263072f745b4f3913fb0afc434c4e">IntStatus</a>, <a class="code" href="group___l_p_c___types___public___types.html#ga7fab312a9f10f1386a955977d2ec96fe">SetState</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gafb6827323e4c501477936a84bd733b4f">   50</a></span>&#160;<span class="preprocessor">#define PARAM_SETSTATE(State) ((State==RESET) || (State==SET))</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">   55</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="group___l_p_c___types___public___types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a> = 0, <a class="code" href="group___l_p_c___types___public___types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a> = !<a class="code" href="group___l_p_c___types___public___types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>} <a class="code" href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga5475435ea985fe5abbf2048e87e3e682">   56</a></span>&#160;<span class="preprocessor">#define PARAM_FUNCTIONALSTATE(State) ((State==DISABLE) || (State==ENABLE))</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gga67a0db04d321a74b7e7fcfd3f1a3f70bac7f69f7c9e5aea9b8f54cf02870e2bf8">   61</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="group___l_p_c___types___public___types.html#gga67a0db04d321a74b7e7fcfd3f1a3f70ba2fd6f336d08340583bd620a7f5694c90">ERROR</a> = 0, <a class="code" href="group___l_p_c___types___public___types.html#gga67a0db04d321a74b7e7fcfd3f1a3f70bac7f69f7c9e5aea9b8f54cf02870e2bf8">SUCCESS</a> = !<a class="code" href="group___l_p_c___types___public___types.html#gga67a0db04d321a74b7e7fcfd3f1a3f70ba2fd6f336d08340583bd620a7f5694c90">ERROR</a>} <a class="code" href="group___l_p_c___types___public___types.html#ga67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gaddb88bff95842be0c54e0e979f45cf95">   67</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ggaddb88bff95842be0c54e0e979f45cf95ae00130e64382c35d172d226b79aa9acb">   69</a></span>&#160;    <a class="code" href="group___l_p_c___types___public___types.html#ggaddb88bff95842be0c54e0e979f45cf95ae00130e64382c35d172d226b79aa9acb">NONE_BLOCKING</a> = 0,      </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ggaddb88bff95842be0c54e0e979f45cf95a854a1cd6e3a98db9e290dddea29725e7">   70</a></span>&#160;    <a class="code" href="group___l_p_c___types___public___types.html#ggaddb88bff95842be0c54e0e979f45cf95a854a1cd6e3a98db9e290dddea29725e7">BLOCKING</a>,               </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <a class="code" href="group___l_p_c___types___public___types.html#gaddb88bff95842be0c54e0e979f45cf95">TRANSFER_BLOCK_Type</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga5f7b826e88ffb1fae2260abb3a75b19a">   75</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="group___l_p_c___types___public___types.html#ga5f7b826e88ffb1fae2260abb3a75b19a">PFV</a>)();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga5cad251913e41ad7a8c765945356ec47">   78</a></span>&#160;<span class="keyword">typedef</span> int32_t(*<a class="code" href="group___l_p_c___types___public___types.html#ga5cad251913e41ad7a8c765945356ec47">PFI</a>)();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* Public Macros -------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/* _BIT(n) sets the bit at position &quot;n&quot;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * _BIT(n) is intended to be used in &quot;OR&quot; and &quot;AND&quot; expressions:</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * e.g., &quot;(_BIT(3) | _BIT(7))&quot;.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#undef _BIT</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/* Set bit macro */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga7ee022f5e5a971a8324e4b7572d49170">   96</a></span>&#160;<span class="preprocessor">#define _BIT(n) (1&lt;&lt;n)</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/* _SBF(f,v) sets the bit field starting at position &quot;f&quot; to value &quot;v&quot;.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * _SBF(f,v) is intended to be used in &quot;OR&quot; and &quot;AND&quot; expressions:</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * e.g., &quot;((_SBF(5,7) | _SBF(12,0xF)) &amp; 0xFFFF)&quot;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#undef _SBF</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/* Set bit field macro */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga6caca3483c2ce446900be05ea02e8f49">  104</a></span>&#160;<span class="preprocessor">#define _SBF(f,v) (v&lt;&lt;f)</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/* _BITMASK constructs a symbol with &#39;field_width&#39; least significant</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * bits set.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * e.g., _BITMASK(5) constructs &#39;0x1F&#39;, _BITMASK(16) == 0xFFFF</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * The symbol is intended to be used to limit the bit field width</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * thusly:</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> * &lt;a_register&gt; = (any_expression) &amp; _BITMASK(x), where 0 &lt; x &lt;= 32.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> * If &quot;any_expression&quot; results in a value that is larger than can be</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> * contained in &#39;x&#39; bits, the bits above &#39;x - 1&#39; are masked off.  When</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> * used with the _SBF example above, the example would be written:</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * a_reg = ((_SBF(5,7) | _SBF(12,0xF)) &amp; _BITMASK(16))</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * This ensures that the value written to a_reg is no wider than</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * 16 bits, and makes the code easier to read and understand.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#undef _BITMASK</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">/* Bitmask creation macro */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga78ad3421dde54769e8b46d36819ae87a">  121</a></span>&#160;<span class="preprocessor">#define _BITMASK(field_width) ( _BIT(field_width) - 1)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">/* NULL pointer */</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#ifndef NULL</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">  125</a></span>&#160;<span class="preprocessor">#define NULL ((void*) 0)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">/* Number of elements in an array */</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#gafdd9296176e56fcfd83c07d345a045a7">  129</a></span>&#160;<span class="preprocessor">#define NELEMENTS(array)  (sizeof (array) / sizeof (array[0]))</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/* Static data/function define */</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga10b2d890d871e1489bb02b7e70d9bdfb">  132</a></span>&#160;<span class="preprocessor">#define STATIC static</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">/* External data/function define */</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga77366c1bd428629dc898e188bfd182a3">  134</a></span>&#160;<span class="preprocessor">#define EXTERN extern</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">  136</a></span>&#160;<span class="preprocessor">#define MAX(a, b) (((a) &gt; (b)) ? (a) : (b))</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___macros.html#ga3acffbd305ee72dcd4593c0d8af64a4f">  137</a></span>&#160;<span class="preprocessor">#define MIN(a, b) (((a) &lt; (b)) ? (a) : (b))</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">/* Old Type Definition compatibility ------------------------------------------ */</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gaebb9e13210d88d43e32e735ada43a425">  150</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">char</span> <a class="code" href="group___l_p_c___types___public___types.html#gaebb9e13210d88d43e32e735ada43a425">CHAR</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga7353117656180c64d2216c874998b98b">  153</a></span>&#160;<span class="keyword">typedef</span> uint8_t <a class="code" href="group___l_p_c___types___public___types.html#ga7353117656180c64d2216c874998b98b">UNS_8</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gac172005ce53b001f50a677cc10bd17b0">  156</a></span>&#160;<span class="keyword">typedef</span> int8_t <a class="code" href="group___l_p_c___types___public___types.html#gac172005ce53b001f50a677cc10bd17b0">INT_8</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gafce87a7f2271b2cf38d7532f157f8a50">  159</a></span>&#160;<span class="keyword">typedef</span> uint16_t <a class="code" href="group___l_p_c___types___public___types.html#gafce87a7f2271b2cf38d7532f157f8a50">UNS_16</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gaae6e34a91bf60db05de64de7720df9a5">  162</a></span>&#160;<span class="keyword">typedef</span> int16_t <a class="code" href="group___l_p_c___types___public___types.html#gaae6e34a91bf60db05de64de7720df9a5">INT_16</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga28adf5c6b1811ca447826319598d8aba">  165</a></span>&#160;<span class="keyword">typedef</span> uint32_t <a class="code" href="group___l_p_c___types___public___types.html#ga28adf5c6b1811ca447826319598d8aba">UNS_32</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga3a17614f3a1b67eaf20781d8ec16a652">  168</a></span>&#160;<span class="keyword">typedef</span> int32_t <a class="code" href="group___l_p_c___types___public___types.html#ga3a17614f3a1b67eaf20781d8ec16a652">INT_32</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga1a0aab29eee6b306564084e005fa5750">  171</a></span>&#160;<span class="keyword">typedef</span> int64_t <a class="code" href="group___l_p_c___types___public___types.html#ga1a0aab29eee6b306564084e005fa5750">INT_64</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#ga2299199b92f0535ad8c2e2d8c7c7f09b">  174</a></span>&#160;<span class="keyword">typedef</span> uint64_t <a class="code" href="group___l_p_c___types___public___types.html#ga2299199b92f0535ad8c2e2d8c7c7f09b">UNS_64</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gae82ce7bbea976c0646ed6458705df2ae">  177</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="group___l_p_c___types___public___types.html#ga39db6982619d623273fad8a383489309">Bool</a> <a class="code" href="group___l_p_c___types___public___types.html#gae82ce7bbea976c0646ed6458705df2ae">BOOL_32</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gaa14120a3f1d4674cce6060fe093abde0">  180</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="group___l_p_c___types___public___types.html#ga39db6982619d623273fad8a383489309">Bool</a> <a class="code" href="group___l_p_c___types___public___types.html#gaa14120a3f1d4674cce6060fe093abde0">BOOL_16</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="group___l_p_c___types___public___types.html#gaefbcf737e3e031d1b6522b4cd079a292">  183</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="group___l_p_c___types___public___types.html#ga39db6982619d623273fad8a383489309">Bool</a> <a class="code" href="group___l_p_c___types___public___types.html#gaefbcf737e3e031d1b6522b4cd079a292">BOOL_8</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LPC_TYPES_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">/* --------------------------------- End Of File ------------------------------ */</span></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga5f7b826e88ffb1fae2260abb3a75b19a"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga5f7b826e88ffb1fae2260abb3a75b19a">PFV</a></div><div class="ttdeci">void(* PFV)()</div><div class="ttdef"><b>Definition:</b> lpc_types.h:75</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gac172005ce53b001f50a677cc10bd17b0"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gac172005ce53b001f50a677cc10bd17b0">INT_8</a></div><div class="ttdeci">int8_t INT_8</div><div class="ttdef"><b>Definition:</b> lpc_types.h:156</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:55</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga39db6982619d623273fad8a383489309"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga39db6982619d623273fad8a383489309">Bool</a></div><div class="ttdeci">Bool</div><div class="ttdoc">Boolean Type definition. </div><div class="ttdef"><b>Definition:</b> lpc_types.h:44</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gaefbcf737e3e031d1b6522b4cd079a292"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gaefbcf737e3e031d1b6522b4cd079a292">BOOL_8</a></div><div class="ttdeci">Bool BOOL_8</div><div class="ttdef"><b>Definition:</b> lpc_types.h:183</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga2299199b92f0535ad8c2e2d8c7c7f09b"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga2299199b92f0535ad8c2e2d8c7c7f09b">UNS_64</a></div><div class="ttdeci">uint64_t UNS_64</div><div class="ttdef"><b>Definition:</b> lpc_types.h:174</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gga39db6982619d623273fad8a383489309aa1e095cc966dbecf6a0d8aad75348d1a"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gga39db6982619d623273fad8a383489309aa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:44</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga7fab312a9f10f1386a955977d2ec96fe"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga7fab312a9f10f1386a955977d2ec96fe">SetState</a></div><div class="ttdeci">enum FlagStatus SetState</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gac9a7e9a35d2513ec15c3b537aaa4fba1"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a></div><div class="ttdeci">FunctionalState</div><div class="ttdoc">Functional State Definition. </div><div class="ttdef"><b>Definition:</b> lpc_types.h:55</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gaddb88bff95842be0c54e0e979f45cf95"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gaddb88bff95842be0c54e0e979f45cf95">TRANSFER_BLOCK_Type</a></div><div class="ttdeci">TRANSFER_BLOCK_Type</div><div class="ttdef"><b>Definition:</b> lpc_types.h:67</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga67a0db04d321a74b7e7fcfd3f1a3f70b"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> lpc_types.h:61</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gae82ce7bbea976c0646ed6458705df2ae"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gae82ce7bbea976c0646ed6458705df2ae">BOOL_32</a></div><div class="ttdeci">Bool BOOL_32</div><div class="ttdef"><b>Definition:</b> lpc_types.h:177</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gga39db6982619d623273fad8a383489309aa82764c3079aea4e60c80e45befbb839"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gga39db6982619d623273fad8a383489309aa82764c3079aea4e60c80e45befbb839">TRUE</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:44</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gafce87a7f2271b2cf38d7532f157f8a50"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gafce87a7f2271b2cf38d7532f157f8a50">UNS_16</a></div><div class="ttdeci">uint16_t UNS_16</div><div class="ttdef"><b>Definition:</b> lpc_types.h:159</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gaa14120a3f1d4674cce6060fe093abde0"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gaa14120a3f1d4674cce6060fe093abde0">BOOL_16</a></div><div class="ttdeci">Bool BOOL_16</div><div class="ttdef"><b>Definition:</b> lpc_types.h:180</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gaae6e34a91bf60db05de64de7720df9a5"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gaae6e34a91bf60db05de64de7720df9a5">INT_16</a></div><div class="ttdeci">int16_t INT_16</div><div class="ttdef"><b>Definition:</b> lpc_types.h:162</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:55</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:49</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ggaddb88bff95842be0c54e0e979f45cf95a854a1cd6e3a98db9e290dddea29725e7"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ggaddb88bff95842be0c54e0e979f45cf95a854a1cd6e3a98db9e290dddea29725e7">BLOCKING</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:70</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga7353117656180c64d2216c874998b98b"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga7353117656180c64d2216c874998b98b">UNS_8</a></div><div class="ttdeci">uint8_t UNS_8</div><div class="ttdef"><b>Definition:</b> lpc_types.h:153</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga3a17614f3a1b67eaf20781d8ec16a652"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga3a17614f3a1b67eaf20781d8ec16a652">INT_32</a></div><div class="ttdeci">int32_t INT_32</div><div class="ttdef"><b>Definition:</b> lpc_types.h:168</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gaebb9e13210d88d43e32e735ada43a425"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gaebb9e13210d88d43e32e735ada43a425">CHAR</a></div><div class="ttdeci">char CHAR</div><div class="ttdef"><b>Definition:</b> lpc_types.h:150</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga89136caac2e14c55151f527ac02daaff"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a></div><div class="ttdeci">FlagStatus</div><div class="ttdoc">Flag Status and Interrupt Flag Status type definition. </div><div class="ttdef"><b>Definition:</b> lpc_types.h:49</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ggaddb88bff95842be0c54e0e979f45cf95ae00130e64382c35d172d226b79aa9acb"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ggaddb88bff95842be0c54e0e979f45cf95ae00130e64382c35d172d226b79aa9acb">NONE_BLOCKING</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:69</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:49</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga28adf5c6b1811ca447826319598d8aba"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga28adf5c6b1811ca447826319598d8aba">UNS_32</a></div><div class="ttdeci">uint32_t UNS_32</div><div class="ttdef"><b>Definition:</b> lpc_types.h:165</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga1a0aab29eee6b306564084e005fa5750"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga1a0aab29eee6b306564084e005fa5750">INT_64</a></div><div class="ttdeci">int64_t INT_64</div><div class="ttdef"><b>Definition:</b> lpc_types.h:171</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gga67a0db04d321a74b7e7fcfd3f1a3f70ba2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gga67a0db04d321a74b7e7fcfd3f1a3f70ba2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:61</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gab7d263072f745b4f3913fb0afc434c4e"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gab7d263072f745b4f3913fb0afc434c4e">IntStatus</a></div><div class="ttdeci">enum FlagStatus IntStatus</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_gga67a0db04d321a74b7e7fcfd3f1a3f70bac7f69f7c9e5aea9b8f54cf02870e2bf8"><div class="ttname"><a href="group___l_p_c___types___public___types.html#gga67a0db04d321a74b7e7fcfd3f1a3f70bac7f69f7c9e5aea9b8f54cf02870e2bf8">SUCCESS</a></div><div class="ttdef"><b>Definition:</b> lpc_types.h:61</div></div>
+<div class="ttc" id="group___l_p_c___types___public___types_html_ga5cad251913e41ad7a8c765945356ec47"><div class="ttname"><a href="group___l_p_c___types___public___types.html#ga5cad251913e41ad7a8c765945356ec47">PFI</a></div><div class="ttdeci">int32_t(* PFI)()</div><div class="ttdef"><b>Definition:</b> lpc_types.h:78</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5d2383f45e8a641cfe91139641418536.html">Ansteuerung_ADC_Bluetooth</a></li><li class="navelem"><a class="el" href="dir_c579899fdbc2f70437c10f65026aa2fd.html">lpc17xx_lib</a></li><li class="navelem"><a class="el" href="dir_46d959d23ce2d95f5008ff5b8615635f.html">include</a></li><li class="navelem"><a class="el" href="lpc__types_8h.html">lpc_types.h</a></li>
+    <li class="footer">Erzeugt am Sam Jun 27 2015 17:45:33 für ADC-Bluetooth von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

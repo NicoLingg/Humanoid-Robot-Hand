@@ -1,0 +1,4 @@
+<map id="adcValue_BurstRead" name="adcValue_BurstRead">
+<area shape="rect" id="node2" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main&#45;Programm: " alt="" coords="197,5,248,32"/>
+<area shape="rect" id="node3" href="$startup___l_p_c17xx_8c.html#a0b25f0c80528ba782dfb09214c5b1737" title="This is the code that gets called when the processor first starts execution following a reset event..." alt="" coords="296,5,451,32"/>
+</map>

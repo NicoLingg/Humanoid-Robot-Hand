@@ -1,0 +1,5 @@
+<map id="ADC_Init" name="ADC_Init">
+<area shape="rect" id="node2" href="$main_8c.html#a55d8015ece045b7dc151239bc45e3334" title="AD&#45;Wandler initialisieren: " alt="" coords="127,5,257,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main&#45;Programm: " alt="" coords="305,5,356,32"/>
+<area shape="rect" id="node4" href="$startup___l_p_c17xx_8c.html#a0b25f0c80528ba782dfb09214c5b1737" title="This is the code that gets called when the processor first starts execution following a reset event..." alt="" coords="404,5,559,32"/>
+</map>

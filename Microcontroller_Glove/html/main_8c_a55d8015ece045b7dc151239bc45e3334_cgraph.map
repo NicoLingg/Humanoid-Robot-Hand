@@ -1,0 +1,7 @@
+<map id="ADC_HardWareInit" name="ADC_HardWareInit">
+<area shape="rect" id="node2" href="$group___p_i_n_s_e_l___public___functions.html#ga771fcbed8f7ee806292e06e283611dc9" title="Configure Pin corresponding to specified parameters passed in the PinCfg. " alt="" coords="184,5,315,32"/>
+<area shape="rect" id="node3" href="$group___a_d_c___public___functions.html#ga478a74858b834fc4352ed572cef09f08" title="ADC_Init" alt="" coords="213,56,286,83"/>
+<area shape="rect" id="node4" href="$group___a_d_c___public___functions.html#gac59b7d9bf60e7cd0e83bac8e0fb4657c" title="ADC_ChannelCmd" alt="" coords="184,107,315,133"/>
+<area shape="rect" id="node5" href="$group___a_d_c___public___functions.html#gac77395a6417558abde3d2886c3ebf3c8" title="ADC_StartCmd" alt="" coords="194,157,305,184"/>
+<area shape="rect" id="node6" href="$group___a_d_c___public___functions.html#ga71ac27ff07336f95a4cb0c66879d5c09" title="ADC_BurstCmd" alt="" coords="192,208,307,235"/>
+</map>

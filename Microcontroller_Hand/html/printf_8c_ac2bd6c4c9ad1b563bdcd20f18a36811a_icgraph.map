@@ -1,0 +1,10 @@
+<map id="vsprintf" name="vsprintf">
+<area shape="rect" id="node2" href="$printf_8c.html#a4c938d1cedba90cbc8107400ebea6100" title="Outputs a formatted string on the given stream. Format arguments are given in a va_list instance..." alt="" coords="116,31,175,57"/>
+<area shape="rect" id="node9" href="$printf_8c.html#a2ab9fb00bf66223b1a3f334376963100" title="Writes a formatted string inside another string. " alt="" coords="117,81,174,108"/>
+<area shape="rect" id="node3" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="223,5,277,32"/>
+<area shape="rect" id="node8" href="$printf_8c.html#a714a7aeb0b480bc7cc85c1685964861f" title="Outputs a formatted string on the given stream, using a variable number of arguments. " alt="" coords="223,56,277,83"/>
+<area shape="rect" id="node4" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="325,5,376,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="16 Bit Variable Ausgabe : " alt="" coords="424,5,537,32"/>
+<area shape="rect" id="node6" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main&#45;Programm: " alt="" coords="585,5,636,32"/>
+<area shape="rect" id="node7" href="$startup___l_p_c17xx_8c.html#a0b25f0c80528ba782dfb09214c5b1737" title="This is the code that gets called when the processor first starts execution following a reset event..." alt="" coords="684,5,839,32"/>
+</map>

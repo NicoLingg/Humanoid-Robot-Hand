@@ -1,0 +1,8 @@
+<map id="Ansteuerung_ADC_Bluetooth/lpc17xx_lib/include/lpc17xx_uart.h" name="Ansteuerung_ADC_Bluetooth/lpc17xx_lib/include/lpc17xx_uart.h">
+<area shape="rect" id="node2" href="$_l_p_c17xx_8h.html" title="CMSIS Cortex&#45;M3 Core Peripheral Access Layer Header File for NXP LPC17xx Device Series. " alt="" coords="131,95,217,121"/>
+<area shape="rect" id="node8" href="$lpc__types_8h.html" title="Contains the NXP ABL typedefs for C standard types. It is intended to be used in ISO C conforming dev..." alt="" coords="17,95,107,121"/>
+<area shape="rect" id="node3" href="$core__cm3_8h.html" title="CMSIS Cortex&#45;M3 Core Peripheral Access Layer Header File. " alt="" coords="259,169,350,196"/>
+<area shape="rect" id="node7" href="$system___l_p_c17xx_8h.html" title="CMSIS Cortex&#45;M3 Device Peripheral Access Layer Header File for the NXP LPC17xx Device Series..." alt="" coords="99,169,235,196"/>
+<area shape="rect" id="node5" href="$core__cm_instr_8h.html" title="CMSIS Cortex&#45;M Core Instruction Access Header File. " alt="" coords="237,244,345,271"/>
+<area shape="rect" id="node6" href="$core__cm_func_8h.html" title="CMSIS Cortex&#45;M Core Function Access Header File. " alt="" coords="370,244,482,271"/>
+</map>

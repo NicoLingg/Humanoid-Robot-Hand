@@ -1,0 +1,11 @@
+<map id="lcd_putchar" name="lcd_putchar">
+<area shape="rect" id="node2" href="$printf_8c.html#aac7233dce0ef357b1ea507667a7b6e07" title="Transmit a char, if you want to use printf(), you need implement this function. " alt="" coords="143,56,219,83"/>
+<area shape="rect" id="node3" href="$printf_8c.html#a25c4b74226a8a3a0d6eef3a072be087b" title="Implementation of fputc using the DBGU as the standard output. Required for printf(). " alt="" coords="267,56,317,83"/>
+<area shape="rect" id="node4" href="$printf_8c.html#ad870e26ae50d712bb504aa4b067802f4" title="Implementation of fputs using the DBGU as the standard output. Required for printf(). " alt="" coords="365,56,416,83"/>
+<area shape="rect" id="node5" href="$printf_8c.html#a4c938d1cedba90cbc8107400ebea6100" title="Outputs a formatted string on the given stream. Format arguments are given in a va_list instance..." alt="" coords="464,31,523,57"/>
+<area shape="rect" id="node10" href="$printf_8c.html#a5a8c5f197e584138be351a4437f67689" title="Outputs a string on stdout. " alt="" coords="470,81,517,108"/>
+<area shape="rect" id="node6" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="571,5,625,32"/>
+<area shape="rect" id="node9" href="$printf_8c.html#a714a7aeb0b480bc7cc85c1685964861f" title="Outputs a formatted string on the given stream, using a variable number of arguments. " alt="" coords="571,56,625,83"/>
+<area shape="rect" id="node7" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="673,5,724,32"/>
+<area shape="rect" id="node8" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="UARTPutDec32: " alt="" coords="772,5,885,32"/>
+</map>

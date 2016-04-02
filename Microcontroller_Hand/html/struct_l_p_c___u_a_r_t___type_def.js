@@ -1,0 +1,25 @@
+var struct_l_p_c___u_a_r_t___type_def =
+[
+    [ "ACR", "struct_l_p_c___u_a_r_t___type_def.html#a9cb55206b29a8c16354747c556ab8bea", null ],
+    [ "DLL", "struct_l_p_c___u_a_r_t___type_def.html#a39198746ce75689ff1e0324d8e28afe5", null ],
+    [ "DLM", "struct_l_p_c___u_a_r_t___type_def.html#a47c5741e71400b5fb574b7a9e109accc", null ],
+    [ "FCR", "struct_l_p_c___u_a_r_t___type_def.html#a95da54034efc1b39c135d88cede37bfb", null ],
+    [ "FDR", "struct_l_p_c___u_a_r_t___type_def.html#ab1424661e47cf560fc294bef93964180", null ],
+    [ "FIFOLVL", "struct_l_p_c___u_a_r_t___type_def.html#a4eaa7743f381e0a275f60cb98fce433c", null ],
+    [ "ICR", "struct_l_p_c___u_a_r_t___type_def.html#a748980d41e2145cd5cec0317ef4990c0", null ],
+    [ "IER", "struct_l_p_c___u_a_r_t___type_def.html#a6566f8cfbd1d8aa7e8db046aa35e77db", null ],
+    [ "IIR", "struct_l_p_c___u_a_r_t___type_def.html#a2cab358d182aaf444bd1e2e6fa824d15", null ],
+    [ "LCR", "struct_l_p_c___u_a_r_t___type_def.html#a5f855de5ad502ecb09ae4a038feb4d5f", null ],
+    [ "LSR", "struct_l_p_c___u_a_r_t___type_def.html#a573615f4a61289f083173114b3dac919", null ],
+    [ "RBR", "struct_l_p_c___u_a_r_t___type_def.html#aa20b56592acd94dc5526b0ac5e8dea1e", null ],
+    [ "RESERVED0", "struct_l_p_c___u_a_r_t___type_def.html#af86c61a5d38a4fc9cef942a12744486b", null ],
+    [ "RESERVED1", "struct_l_p_c___u_a_r_t___type_def.html#a0fab79785221a82906637b181ca704e5", null ],
+    [ "RESERVED2", "struct_l_p_c___u_a_r_t___type_def.html#a59ba54c04bd07c827945c43582871a81", null ],
+    [ "RESERVED3", "struct_l_p_c___u_a_r_t___type_def.html#a1936698394c9e65033538255b609f5d5", null ],
+    [ "RESERVED4", "struct_l_p_c___u_a_r_t___type_def.html#a23568af560875ec74b660f1860e06d3b", null ],
+    [ "RESERVED5", "struct_l_p_c___u_a_r_t___type_def.html#a20d8236c4977e318372398caf1b1a595", null ],
+    [ "RESERVED6", "struct_l_p_c___u_a_r_t___type_def.html#a5ef58c5c248d8706791ceaf3049c5401", null ],
+    [ "SCR", "struct_l_p_c___u_a_r_t___type_def.html#a3fa18be8bc25b11eff5d36fbad087a91", null ],
+    [ "TER", "struct_l_p_c___u_a_r_t___type_def.html#a3a6e44664231b6cc96676c55a56d2e0c", null ],
+    [ "THR", "struct_l_p_c___u_a_r_t___type_def.html#a7824146963ba37d60dd75ae1a13e650d", null ]
+];

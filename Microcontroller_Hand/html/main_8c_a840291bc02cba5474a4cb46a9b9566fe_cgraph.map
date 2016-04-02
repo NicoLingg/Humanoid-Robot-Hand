@@ -1,0 +1,49 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8c.html#aa53c9d40f3aa552a9974cd55ac510cb3" title="LCD&#45;Initialisierung: " alt="" coords="1143,107,1213,133"/>
+<area shape="rect" id="node11" href="$lc798x_8c.html#a43fd8a89dbc4006d2d0121106bac3d47" title="lcd_set_cursor" alt="" coords="1459,309,1565,336"/>
+<area shape="rect" id="node13" href="$main_8c.html#a214f9bddb23c4dfb666c9c206d9ba8dd" title="UART&#45;Initialisierung: " alt="" coords="118,1019,209,1045"/>
+<area shape="rect" id="node21" href="$main_8c.html#af39e6384ce26bdb1369784fde037a319" title="PWM&#45;Initialisierung: " alt="" coords="104,689,223,716"/>
+<area shape="rect" id="node23" href="$group___p_w_m___public___functions.html#ga1f0927b98fd5eb68c820b8fbf0268164" title="PWM_MatchUpdate" alt="" coords="291,512,430,539"/>
+<area shape="rect" id="node30" href="$main_8c.html#a2b1ec0f642c0671a7370da10bb4740da" title="16 Bit Variable Ausgabe : " alt="" coords="107,360,220,387"/>
+<area shape="rect" id="node48" href="$main_8c.html#a3dccc2054070aae79797f9363482420e" title="Warte&#45;Funktion mit Timer0: " alt="" coords="104,1069,223,1096"/>
+<area shape="rect" id="node3" href="$lc798x_8c.html#a33bc1020b824d17ab27d3fe752420d76" title="lcd_init_interface" alt="" coords="1271,107,1390,133"/>
+<area shape="rect" id="node4" href="$lc798x_8c.html#ab3d0dfc4d013131dcd9abc5a83d89202" title="lcd_set_system" alt="" coords="1455,107,1569,133"/>
+<area shape="rect" id="node8" href="$lc798x_8c.html#a0978fc4c2fabee79c3664fc950d0cddd" title="lcd_set_cursor_mode" alt="" coords="1439,157,1585,184"/>
+<area shape="rect" id="node9" href="$lc798x_8c.html#ae4dc23fdf26f3b8b0db253f431fe950d" title="lcd_clear_screen" alt="" coords="1271,208,1391,235"/>
+<area shape="rect" id="node12" href="$lc798x_8c.html#aee7003d4222c1b4689d85a8f787cb371" title="lcd_control" alt="" coords="1288,5,1373,32"/>
+<area shape="rect" id="node5" href="$lc798x_8c.html#a08d0b7df8efda0c3b5af2955cccae65f" title="lc798x_register" alt="" coords="1633,183,1744,209"/>
+<area shape="rect" id="node6" href="$lc798x_8c.html#aadaccfff3a85ee0924556a54fa9d3014" title="lcd_write" alt="" coords="1792,221,1865,248"/>
+<area shape="rect" id="node7" href="$lc798x_8c.html#a6df91edebc1cc2015e9d66bf34b20d92" title="lc798x_wait_for_ready" alt="" coords="1913,221,2064,248"/>
+<area shape="rect" id="node10" href="$lc798x_8c.html#a05a4580ffdbd23deca7104bff0b9d7e8" title="lcd_set_layout" alt="" coords="1459,208,1565,235"/>
+<area shape="rect" id="node14" href="$group___p_i_n_s_e_l___public___functions.html#ga771fcbed8f7ee806292e06e283611dc9" title="Configure Pin corresponding to specified parameters passed in the PinCfg. " alt="" coords="295,917,426,944"/>
+<area shape="rect" id="node15" href="$group___u_a_r_t___public___functions.html#ga38648a309b0eb01e488f593f93fd9e02" title="UART_Init" alt="" coords="321,1120,401,1147"/>
+<area shape="rect" id="node16" href="$group___u_a_r_t___public___functions.html#ga84c4e278cf63acef81e359b76d28319a" title="UART_FIFOConfigStructInit" alt="" coords="271,1171,451,1197"/>
+<area shape="rect" id="node17" href="$group___u_a_r_t___public___functions.html#ga91f3bb9558513f4a1da4163997bd198b" title="UART_FIFOConfig" alt="" coords="297,1221,425,1248"/>
+<area shape="rect" id="node18" href="$group___u_a_r_t___public___functions.html#ga4bad6b6b83a5345ea0d78427a5df5284" title="UART_IntConfig" alt="" coords="304,968,417,995"/>
+<area shape="rect" id="node19" href="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga3349f2e3580d7ce22d6530b7294e5921" title="Enable External Interrupt. " alt="" coords="300,1019,421,1045"/>
+<area shape="rect" id="node20" href="$group___u_a_r_t___public___functions.html#ga3400356ef61d3735d9d10e04e0e95df4" title="UART_TxCmd" alt="" coords="309,1069,413,1096"/>
+<area shape="rect" id="node22" href="$group___p_w_m___public___functions.html#ga6012759589458b1ec053fe75d4e3b156" title="PWM_Init" alt="" coords="321,613,400,640"/>
+<area shape="rect" id="node24" href="$group___p_w_m___public___functions.html#gac2a214e55fe2994251eae4efcad1ba81" title="PWM_ConfigMatch" alt="" coords="293,664,428,691"/>
+<area shape="rect" id="node25" href="$group___p_w_m___public___functions.html#ga655a4373a1a7c420a39da54aaef79196" title="PWM_ChannelConfig" alt="" coords="288,715,433,741"/>
+<area shape="rect" id="node26" href="$group___p_w_m___public___functions.html#gafdeb99d7221d80a71b741cac2461c671" title="PWM_ChannelCmd" alt="" coords="293,765,429,792"/>
+<area shape="rect" id="node27" href="$group___p_w_m___public___functions.html#ga2c34440e62bdb2030a72b54f66dc6a3f" title="PWM_ResetCounter" alt="" coords="290,816,431,843"/>
+<area shape="rect" id="node28" href="$group___p_w_m___public___functions.html#ga237d47eddfbbf747fd97eaed1e79336c" title="PWM_CounterCmd" alt="" coords="293,867,428,893"/>
+<area shape="rect" id="node29" href="$group___p_w_m___public___functions.html#ga324784f12861403b86424167c01b9c08" title="PWM_Cmd" alt="" coords="316,563,405,589"/>
+<area shape="rect" id="node31" href="$main_8c.html#a13b4280dc71a2da766996eaa5bfc16fa" title="Char zu UART: " alt="" coords="309,309,412,336"/>
+<area shape="rect" id="node33" href="$printf_8c.html#ad6c265f6d41266cbb62035915f9c0030" title="Outputs a formatted string on the DBGU stream, using a variable number of arguments. " alt="" coords="335,360,386,387"/>
+<area shape="rect" id="node32" href="$group___u_a_r_t___public___functions.html#gadeb1a6a95247931abb93fa49571ae51c" title="UART_Send" alt="" coords="499,309,592,336"/>
+<area shape="rect" id="node34" href="$printf_8c.html#adc27df6594a246219000f9d2a584a3be" title="Outputs a formatted string on the DBGU stream. Format arguments are given in a va_list instance..." alt="" coords="518,360,573,387"/>
+<area shape="rect" id="node35" href="$printf_8c.html#a4c938d1cedba90cbc8107400ebea6100" title="Outputs a formatted string on the given stream. Format arguments are given in a va_list instance..." alt="" coords="640,309,699,336"/>
+<area shape="rect" id="node36" href="$printf_8c.html#ac2bd6c4c9ad1b563bdcd20f18a36811a" title="Stores the result of a formatted string into another string. Format arguments are given in a va_list ..." alt="" coords="747,309,809,336"/>
+<area shape="rect" id="node43" href="$printf_8c.html#ad870e26ae50d712bb504aa4b067802f4" title="Implementation of fputs using the DBGU as the standard output. Required for printf(). " alt="" coords="753,233,803,260"/>
+<area shape="rect" id="node37" href="$printf_8c.html#a8f2d28f08e5d66db9a14ed70cb1f4220" title="Stores the result of a formatted string into another string. Format arguments are given in a va_list ..." alt="" coords="857,309,927,336"/>
+<area shape="rect" id="node38" href="$printf_8c.html#ae7337166e7d8bcc7d589e63777ae2541" title="Writes a signed int inside the given string, using the provided fill &amp; width parameters. " alt="" coords="982,208,1078,235"/>
+<area shape="rect" id="node39" href="$printf_8c.html#a9d6957a52d69935cd92755844e9252be" title="Writes a character inside the given string. Returns 1. " alt="" coords="1143,309,1213,336"/>
+<area shape="rect" id="node40" href="$printf_8c.html#afeda5b1cd1c8e201b2fc997b35d03281" title="Writes an unsigned int inside the given string, using the provided fill &amp; width parameters. " alt="" coords="975,259,1085,285"/>
+<area shape="rect" id="node41" href="$printf_8c.html#a3b3bdb18a334228eb2b08b1a70c1a62a" title="Writes an hexadecimal value into a string, using the given fill, width &amp; capital parameters. " alt="" coords="994,309,1066,336"/>
+<area shape="rect" id="node42" href="$printf_8c.html#a9692c423423d4787d69f090a359c5644" title="Writes a string inside the given string. " alt="" coords="992,360,1068,387"/>
+<area shape="rect" id="node44" href="$printf_8c.html#a25c4b74226a8a3a0d6eef3a072be087b" title="Implementation of fputc using the DBGU as the standard output. Required for printf(). " alt="" coords="867,208,917,235"/>
+<area shape="rect" id="node45" href="$printf_8c.html#aac7233dce0ef357b1ea507667a7b6e07" title="Transmit a char, if you want to use printf(), you need implement this function. " alt="" coords="992,157,1068,184"/>
+<area shape="rect" id="node46" href="$lc798x_8c.html#a5330b79372b260630a9049c60b1fefa3" title="lcd_putchar" alt="" coords="1133,259,1223,285"/>
+<area shape="rect" id="node47" href="$lc798x_8c.html#a7327a2088a6342e03a124c2335c73520" title="lcd_newline" alt="" coords="1286,259,1375,285"/>
+</map>

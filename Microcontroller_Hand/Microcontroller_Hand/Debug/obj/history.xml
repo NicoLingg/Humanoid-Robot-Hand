@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 4.8.2 i686-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DLPC1769 -I..\..\..\..\..\Users\Nico\Desktop\Website_Software -I..\..\..\..\..\Users\Nico\Desktop\Website_Software\Robot-Hand\Microcontroller_Hand\cmsis_boot -I..\..\..\..\..\Users\Nico\Desktop\Website_Software\Robot-Hand -I..\..\..\..\..\Users\Nico\Desktop\Website_Software\Robot-Hand\Microcontroller_Hand\lpc17xx_lib\include -I..\..\..\..\..\Users\Nico\Desktop\Website_Software\Robot-Hand\Microcontroller_Hand\cmsis -I..\..\..\..\..\Users\Nico\Desktop\Website_Software\Robot-Hand\Microcontroller_Hand -I..\..\..\..\..\Users\Nico\Desktop\Website_Software\Robot-Hand\Microcontroller_Hand\lpc17xx_lib">
+      <target file="syscalls.o" lastModified="1533cede43f">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="14dc0ade353"/>
+      </target>
+      <target file="system_LPC17xx.o" lastModified="1533cede016">
+         <source file="..\..\..\cmsis_boot\system_LPC17xx.c" lastModified="14dc0ae0daf"/>
+      </target>
+      <target file="startup_LPC17xx.o" lastModified="1533cede2eb">
+         <source file="..\..\..\cmsis_boot\startup\startup_LPC17xx.c" lastModified="14dc0ae0da5"/>
+      </target>
+      <target file="printf.o" lastModified="1533cede1f3">
+         <source file="..\..\..\stdio\printf.c" lastModified="14dc0b91cdd"/>
+      </target>
+      <target file="lpc17xx_gpio.o" lastModified="1533cede281">
+         <source file="..\..\..\lpc17xx_lib\source\lpc17xx_gpio.c" lastModified="14dc0ae1869"/>
+      </target>
+      <target file="lpc17xx_pwm.o" lastModified="1533cede4c9">
+         <source file="..\..\..\lpc17xx_lib\source\lpc17xx_pwm.c" lastModified="14dc0ae0d74"/>
+      </target>
+      <target file="main.o" lastModified="1533cede165">
+         <source file="..\..\..\main.c" lastModified="14e35b62151"/>
+      </target>
+      <target file="lpc17xx_libcfg_default.o" lastModified="1533cede353">
+         <source file="..\..\..\lpc17xx_lib\source\lpc17xx_libcfg_default.c" lastModified="14dc0adfe94"/>
+      </target>
+      <target file="lc798x.o" lastModified="1533cede569">
+         <source file="..\..\..\lc798x.c" lastModified="14c50ff1f7a"/>
+      </target>
+      <target file="lpc17xx_uart.o" lastModified="1533cede0ca">
+         <source file="..\..\..\lpc17xx_lib\source\lpc17xx_uart.c" lastModified="14dc0ae1852"/>
+      </target>
+      <target file="lpc17xx_pinsel.o" lastModified="1533cede3c9">
+         <source file="..\..\..\lpc17xx_lib\source\lpc17xx_pinsel.c" lastModified="14dc0ae0dd0"/>
+      </target>
+      <target file="lpc17xx_clkpwr.o" lastModified="1533ceddfa0">
+         <source file="..\..\..\lpc17xx_lib\source\lpc17xx_clkpwr.c" lastModified="14dc0ae0d8d"/>
+      </target>
+   </processor>
+</history>
